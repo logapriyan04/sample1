@@ -20,6 +20,12 @@ function Contact() {
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
     resetErrors();
+
+    if (!isPopupOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
   };
 
   const resetErrors = () => {
@@ -65,14 +71,22 @@ function Contact() {
         setMessage("");
         setIsSuccessPopupOpen(true); // Show success popup
         setIsPopupOpen(false); // Close the form popup
+        document.body.classList.remove("no-scroll");
       })
       .catch((error) => {
         console.log("Error sending mail", error);
       });
   };
+
+  const closeSuccessPopup = () => {
+    setIsSuccessPopupOpen(false);
+    document.body.classList.remove("no-scroll");
+  };
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
-  });
+  }, []);
+
   return (
     <div className="Contact" id="Contact">
       <div className="contact-heading" data-aos="fade-up">
@@ -154,15 +168,12 @@ function Contact() {
       {isSuccessPopupOpen && (
         <div id="successPopupContainer" className="successPopupContainer">
           <div className="successPopupContent">
-            <span
-              className="closeBtn"
-              onClick={() => setIsSuccessPopupOpen(false)}
-            >
+            <span className="closeBtn" onClick={closeSuccessPopup}>
               &times;
             </span>
             <h2>Thank you!</h2>
             <p>Your message has been sent successfully.</p>
-            <button onClick={() => setIsSuccessPopupOpen(false)}>Close</button>
+            <button onClick={closeSuccessPopup}>Close</button>
           </div>
         </div>
       )}

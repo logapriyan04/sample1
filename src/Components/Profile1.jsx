@@ -3,12 +3,12 @@ import logo2 from "../Assests/images/logo.png";
 import logo3 from "../Assests/images/logo.png";
 import logoRight from "../Assests/images/name1.png";
 import logoLeft from "../Assests/images/name2.png";
-import profile from "../Assests/images/logo.png";
+import profile from "../Assests/images/profile.pic-2.jpg";
 import ProjectL from "../Assests/images/projectimg-2.jpg";
 import ProjectC from "../Assests/images/image2.jpeg";
 import ProjectR from "../Assests/images/cycle2.jpg";
 import { MdAddCall } from "react-icons/md";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "animate.css";
 import { MdEmail } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io";
@@ -156,7 +156,7 @@ function Profile1() {
             src={profile}
             alt="profile"
             className="profile"
-            style={{ height: "150px", width: "150px" }}
+            style={{ height: "200px", width: "200px" }}
           />
         </div>
         <div className="main-conntent-1">
@@ -193,16 +193,13 @@ function Profile1() {
             return (
               <div className="imgCon" key={item.id}>
                 <div
+                  className="img-cont"
                   style={{
                     position: "absolute",
                     marginLeft: "7.1%",
                     marginTop: "90%",
-                    // borderRadius: "30px",
-                    // textAlign: "center",
                     color: "#595a5a",
                     zIndex: 1,
-                    // display: "flex",
-                    // alignItems: "center",
                   }}
                 >
                   <div className="Project-Name">
@@ -221,10 +218,9 @@ function Profile1() {
                 </div>
                 <div>
                   <img
+                    className="ProjecImage"
                     src={item.image}
                     alt="ProjecImage"
-                    height={"330px"}
-                    width={"270px"}
                     style={{
                       border: "none",
                       borderRadius: "35px",
@@ -260,12 +256,15 @@ function Profile1() {
 
           <div className="vert-left-1"></div>
           <div className="first-p">
-            <p style={{ paddingLeft: "2%" }} data-aos="fade-up">
+            <p
+              style={{ textAlign: "left", marginLeft: "15px" }}
+              data-aos="fade-up"
+            >
               {" "}
-              My role is to design and develop the product,<br></br> covering
-              aspects from ideation, prototyping,<br></br> design, and
-              commercialization. Below are the domains.<br></br> I have worked
-              on during product development.
+              My role is to develop a hardware-embedded<br></br> projectin the
+              electrical and electronics<br></br> domain based on the student
+              and industry <br></br>requirements. I worked on most of the
+              Digital/ <br></br>Analog sensors and communications
             </p>
           </div>
         </div>
@@ -276,15 +275,17 @@ function Profile1() {
         {/*  */}
         <div className="timeline-1">
           <div className="first-p">
-            <p style={{ transform: "translateX(-30px)" }}>
+            <p style={{ textAlign: "left", marginRight: "15px" }}>
               {" "}
-              My role is to manage the software <br></br>developer team, Project
-              planning <br></br>and workschedule for the team.
+              My role is to design and develop the product,<br></br> covering
+              aspects from ideation, prototyping,<br></br> design, and
+              commercialization. Below are the<br></br> domains. I have worked
+              on during product<br></br> development.
             </p>
           </div>
           <div className="vert-right "></div>
           <div className="Year-2" data-aos="fade-down">
-            <h2>2021 - 2022</h2>
+            <h2>2019 - 2022</h2>
           </div>
           <div className="content-1" data-aos="fade-down">
             <h6>
@@ -301,8 +302,8 @@ function Profile1() {
         <div className="timeline-2">
           <div className="content-2" data-aos="fade-down">
             <h6>
-              PROJECT MANAGER <br></br>
-              <span style={{ fontSize: "9px" }}>APPIKORN</span>
+              CO FOUNDER AND COO <br></br>
+              <span style={{ fontSize: "9px" }}> SCHOPIQ AUTOMATION</span>
             </h6>
           </div>
           <div className="Year-3" data-aos="fade-down">
@@ -310,12 +311,10 @@ function Profile1() {
           </div>
           <div className="vertical-left-1"></div>
           <div className="first-p" data-aos="fade-up">
-            <p style={{ paddingRight: "5%" }}>
+            <p style={{ textAlign: "left", marginLeft: "15px" }}>
               {" "}
-              My role is to design and develop the product,<br></br> covering
-              aspects from ideation, prototyping,<br></br> design, and
-              commercialization. Below are the domains.<br></br> I have worked
-              on during product development.
+              My role is to manage the software <br></br>developer team, Project
+              planning <br></br>and workschedule for the team.
             </p>
           </div>
         </div>
@@ -326,12 +325,12 @@ function Profile1() {
         {/*  */}
         <div className="timeline-1">
           <div className="first-p" data-aos="fade-up">
-            <p style={{ paddingLeft: "5%" }}>
+            <p style={{ textAlign: "left", marginRight: "15px" }}>
               {" "}
-              My role is to develop a hardware- embedded<br></br> projectin the
-              electrical and electronics<br></br> domain based on the student
-              and <br></br>industry requirements. I worked on mostof the
-              Digital/Analog <br></br>sensors and communications
+              My role is to design and develop the product,<br></br> covering
+              aspects from ideation, prototyping,<br></br> design, and
+              commercialization. Below are the<br></br> domains. I have worked
+              on during product<br></br> development.
             </p>
           </div>
           <div className="vert-right-1"></div>
@@ -340,12 +339,12 @@ function Profile1() {
           </div>
           <div
             className="content-1"
-            style={{ transform: "translateX(-170px)" }}
+            style={{ transform: "translateX(-40px)" }}
             data-aos="fade-up"
           >
             <h6>
-              CO FOUNDER AND COO <br></br>
-              <span style={{ fontSize: "9px" }}>SCOPIP</span>
+              PROJECT MANAGER <br></br>
+              <span style={{ fontSize: "9px" }}>APPIKORN</span>
             </h6>
           </div>
           {/*  */}
@@ -357,9 +356,7 @@ function Profile1() {
           <div className="content-3">
             <h6>
               PRODUCT DEVELOPMENT ENGINEER <br></br>
-              <span style={{ fontSize: "9px" }}>
-                CHEMIN C&I Pvt Ltd APPIKORN
-              </span>
+              <span style={{ fontSize: "9px" }}>CHEMIN C&I Pvt Ltd</span>
             </h6>
           </div>
           <div className="line-4"></div>
@@ -438,45 +435,38 @@ function Profile1() {
         {/*  */}
         <div style={{ paddingTop: "5%" }}>
           <div className="fullline-1"></div>
-          <div
-            className="line-content"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              paddingLeft: "10%",
-              justifyContent: "center",
-            }}
-          >
-            <div className="full-content">
-              <h6>SHINECRAFT TECHNOLOGIES</h6>
+          <div className="contact-foot">
+            <div className="line-content">
+              <div className="full-content">
+                <h5>SHINECRAFT TECHNOLOGIES</h5>
 
-              <p>CREATE | CRAFT | CONNECT</p>
-            </div>
-            <div className="full-contact">
-              <h6>CONTACT</h6>
-              <div className="contact-item-1">
-                <MdAddCall className="contact-icon" />
-                <p>+91-7200353789</p>
+                <p>CREATE | CRAFT | CONNECT</p>
               </div>
-              <div className="contact-item-1">
-                <MdEmail className="contact-icon" />
-                <p>solutions@shincrafttechnologies.com</p>
+              <div className="full-contact">
+                <h5>CONTACT</h5>
+                <div className="contact-item-1">
+                  <MdAddCall className="contact-icon" />
+                  <p>+91-8220647389</p>
+                </div>
+                <div className="contact-item-1">
+                  <MdEmail className="contact-icon" />
+                  <p>ajith@shincrafttechnologies.com</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div className="fullline-1"></div>
-            <div className="footer-content-1">
-              <p>@2024| Alrights reserved</p>
-            </div>
-            <div className="Footer-icons-1">
-              <IoLogoGithub className="social-icon" />
+            <div className="para-foot">
+              <div className="footer-content-1">
+                <p>@2024| Alrights reserved</p>
+              </div>
+              <div className="Footer-icons-1">
+                <IoLogoGithub className="social-icon" />
 
-              <CiLinkedin className="social-icon" />
+                <CiLinkedin className="social-icon" />
 
-              <FaInstagram className="social-icon" />
+                <FaInstagram className="social-icon" />
 
-              <IoLogoFacebook className="social-icon" />
+                <IoLogoFacebook className="social-icon" />
+              </div>
             </div>
           </div>
         </div>

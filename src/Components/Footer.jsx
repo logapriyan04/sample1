@@ -26,12 +26,14 @@ function Footer() {
             <Link to="/Profile1">FOUNDER - AJITHKUMAR</Link>{" "}
             <BsBoxArrowUpRight />
             <br></br>
+          </h3>
+          <h3>
+            {" "}
             <Link to="/secondprofile">
               {" "}
               CO-FOUNDER - MOHAN <BsBoxArrowUpRight />
             </Link>
           </h3>
-          <h3></h3>
         </div>
 
         <div className="Footer-topic">

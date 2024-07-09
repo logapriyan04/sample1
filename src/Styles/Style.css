@@ -2872,7 +2872,7 @@ ul {
   }
   .vert-left-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 298px;
+    height: 295px;
     margin-top: -8px;
     margin-right: -75px;
     transform-origin: top center;
@@ -2882,7 +2882,7 @@ ul {
   }
   .vert-right-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 298px;
+    height: 295px;
     margin-right: -10px;
     margin-top: -8px;
     transform-origin: top center;

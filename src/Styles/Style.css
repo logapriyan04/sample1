@@ -1302,10 +1302,10 @@ ul {
   margin-top: -8px;
   margin-right: 153px;
   /* animation: linedown 3s forwards; */
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 @keyframes grow_animation {
   0% {
@@ -1320,10 +1320,10 @@ ul {
   height: 180px;
   margin-right: 10px;
   margin-top: -8px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 @keyframes grow_animation {
   0% {
@@ -1474,20 +1474,20 @@ ul {
   width: 318px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -10px;
-  transform-origin: top left;
+  /* transform-origin: top left;
   animation: grow_animation2 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 .horzline-cen-7 {
   width: 318px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -10px;
   margin-top: -8px;
-  transform-origin: top left;
+  /* transform-origin: top left;
   animation: grow_animation2 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
   /* transform-origin: top right; */
 }
 /* -- */
@@ -1635,10 +1635,10 @@ ul {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 150px;
   margin-left: 200px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation14 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 30%;
+  animation-range: entry 0 cover 30%; */
 }
 @keyframes grow_animation14 {
   0% {
@@ -2183,14 +2183,20 @@ ul {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
-    gap: 2%;
+    /* align-items: center; */
+    gap: 1%;
     padding-bottom: 2%;
     font-family: "Poppins", sans-serif;
     font-size: 9px;
+    /* margin-right: 100px; */
     /* padding-right: 10%; */
     /* background-color: #2c3e50; */
     /* left: 19%; */
-    margin-left: -60px;
+    margin-left: -90px;
+  }
+  .service-para p {
+    background-color: #2c3e50;
+    width: 350px;
   }
   .horizontal-line {
     width: 80%;
@@ -2264,7 +2270,7 @@ ul {
     color: #ccc;
     padding-top: 30%;
     margin-top: 20%;
-    margin-left: -35%;
+    margin-left: -58%;
     /* background-color: #007bff; */
   }
 
@@ -2482,7 +2488,7 @@ ul {
     left: 70px;
     width: 50%;
     height: 50%;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     display: flex;
     justify-content: left;
     align-items: left;
@@ -2603,7 +2609,7 @@ ul {
     justify-content: space-around;
     gap: 5%;
     padding-top: 1%;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 100vw;
     overflow-x: hidden;
     /* align-items: left; */
@@ -2637,7 +2643,7 @@ ul {
     margin: 0 10px;
     font-size: 15px;
     margin-right: 0px;
-    transform: translateX(-20px);
+    transform: translateX(-30px) translateY(5px);
   }
 
   .main-content {
@@ -2673,7 +2679,7 @@ ul {
     margin-left: 10px;
     padding-bottom: 2%;
     font-size: 9px;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 300px;
   }
   .profile-line {
@@ -2734,7 +2740,7 @@ ul {
     animation: grow_animation3 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
-    margin-top: -6px;
+    margin-top: -5px;
   }
   .horz-line {
     display: flex;
@@ -2756,13 +2762,11 @@ ul {
     margin-top: -12.5px;
   }
   .content-1 {
-    margin-left: 50px;
+    margin-left: 0px;
     margin-top: -70px;
-    /* text-align: center; */
-    width: 100px;
-    /* padding-left: 20%; */
-    /* background-color: #474747; */
-    /* transform: translateX(-52%); */
+
+    width: 170px;
+
     font-family: "CustomFont";
   }
   .timeline-1 {
@@ -2770,9 +2774,9 @@ ul {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-right: -14px;
+    margin-right: -34px;
     /* margin-left: 10px; */
-    margin-top: -23.5px;
+    margin-top: -23px;
   }
   .vert-right {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
@@ -2854,11 +2858,19 @@ ul {
     animation-range: entry 0 cover 40%;
     margin-right: 142px;
   }
+  .content-3 {
+    margin-right: 14px;
+
+    text-align: left;
+    font-family: "CustomFont";
+    font-size: 15px;
+    width: 125px;
+  }
   .horz-ver {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-right: 162px;
+    margin-right: 113px;
     margin-top: -8px;
   }
   .horzline-cen-4 {
@@ -2872,7 +2884,7 @@ ul {
   }
   .vert-left-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 295px;
+    height: 298px;
     margin-top: -8px;
     margin-right: -75px;
     transform-origin: top center;
@@ -2882,7 +2894,7 @@ ul {
   }
   .vert-right-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 295px;
+    height: 298px;
     margin-right: -10px;
     margin-top: -8px;
     transform-origin: top center;
@@ -2903,7 +2915,7 @@ ul {
   .logo-Name-1 {
     display: flex;
     flex-direction: column;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 150px;
     justify-content: center;
     margin-left: 130px;
@@ -2927,44 +2939,45 @@ ul {
   }
   .line-5 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 100px;
-    margin-left: 180px;
-    margin-top: -6.5px;
-    transform-origin: top center;
+    height: 80px;
+    margin-left: 100px;
+    margin-top: -6px;
+    margin-bottom: 4px;
+    /* transform-origin: top center;
     animation: grow_animation14 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 30%; */
   }
   .horzline-cen-6 {
     width: 250px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 10px;
-    transform-origin: top left;
+    /* transform-origin: top left;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
     margin-top: -4.5px;
   }
   .vert-left-3 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
     margin-top: -8px;
-    margin-right: 84px;
+    margin-right: 85px;
     /* animation: linedown 3s forwards; */
-    transform-origin: top center;
+    /* transform-origin: top center;
     animation: grow_animation 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .vert-right-3 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
     margin-right: 10px;
     margin-top: -8px;
-    transform-origin: top center;
+    /* transform-origin: top center;
     animation: grow_animation 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
 
   .second-head {
@@ -2986,11 +2999,11 @@ ul {
     width: 250px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 10px;
-    margin-top: -10px;
-    transform-origin: top left;
+    margin-top: -11px;
+    /* transform-origin: top left;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .first-p {
     display: none;
@@ -3536,6 +3549,9 @@ ul {
     overflow-x: hidden;
     width: 100vw;
   }
+  .circular-button {
+    margin-right: 45%;
+  }
   .circular-button:hover {
     background-color: white; /* Change background to white on hover */
     color: black;
@@ -3580,7 +3596,7 @@ ul {
     justify-content: space-around;
     gap: 5%;
     padding-top: 1%;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 100vw;
     overflow-x: hidden;
     /* align-items: left; */
@@ -3650,7 +3666,7 @@ ul {
     margin-left: 10px;
     padding-bottom: 2%;
     font-size: 9px;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 300px;
   }
   .profile-line {
@@ -3861,13 +3877,13 @@ ul {
   }
   .vert-left-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 312px;
+    height: 298px;
     margin-top: -8px;
     margin-right: -75px;
   }
   .vert-right-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 312px;
+    height: 298px;
     margin-right: -10px;
     margin-top: -8px;
   }
@@ -3884,7 +3900,7 @@ ul {
   .logo-Name-1 {
     display: flex;
     flex-direction: column;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 150px;
     justify-content: center;
     margin-left: 137px;
@@ -3895,6 +3911,7 @@ ul {
     margin-left: 83px;
     margin-top: -21px;
     font-family: "CustomFont";
+    background-color: #2c3e50;
   }
   .horzline-cen-5 {
     width: 280px;
@@ -3902,11 +3919,17 @@ ul {
     margin-right: -10px;
     margin-top: -22px;
   }
+
   .line-5 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 100px;
-    margin-left: 106px;
+    height: 80px;
+    margin-left: 100px;
     margin-top: -6px;
+    margin-bottom: 4px;
+    /* transform-origin: top center;
+      animation: grow_animation14 4s linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 30%; */
   }
   .horzline-cen-6 {
     width: 250px;
@@ -3989,8 +4012,9 @@ ul {
     text-align: center;
     padding: 20px;
     background-color: #121212;
-    width: 90%;
+    /* width: 90%; */
     overflow: hidden;
+    overflow-x: hidden;
   }
 
   .footer-content {
@@ -4220,8 +4244,23 @@ ul {
   .Footer {
     padding-bottom: 5%;
   }
+  .Footer-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 14%;
+  }
   .Footer-head h6 {
     font-size: 13px;
+  }
+  .Footer-head h3 {
+    font-family: "CustomFont";
+    color: white;
+    padding-top: 1px;
+    line-height: 15px;
+    font-size: 15px;
+    /* margin-bottom: 10px; */
   }
   /* ------------- */
   .Experiance {
@@ -4278,11 +4317,9 @@ ul {
   .content-1 {
     margin-left: 0px;
     margin-top: -70px;
-    /* text-align: center; */
+
     width: 170px;
-    /* padding-left: 20%; */
-    /* background-color: #474747; */
-    /* transform: translateX(-52%); */
+
     font-family: "CustomFont";
   }
   .timeline-1 {
@@ -4342,7 +4379,7 @@ ul {
   }
   .content-3 {
     margin-right: 14px;
-    /* margin-top: -100px; */
+
     text-align: left;
     font-family: "CustomFont";
     font-size: 15px;
@@ -4404,13 +4441,13 @@ ul {
   }
   .vert-left-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 312px;
+    height: 298px;
     margin-top: -8px;
     margin-right: -75px;
   }
   .vert-right-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 312px;
+    height: 298px;
     margin-right: -10px;
     margin-top: -8px;
   }
@@ -4427,7 +4464,7 @@ ul {
   .logo-Name-1 {
     display: flex;
     flex-direction: column;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 150px;
     justify-content: center;
     margin-left: 137px;
@@ -4447,9 +4484,14 @@ ul {
   }
   .line-5 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 100px;
-    margin-left: 106px;
+    height: 80px;
+    margin-left: 100px;
     margin-top: -6px;
+    margin-bottom: 4px;
+    /* transform-origin: top center;
+    animation: grow_animation14 4s linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%; */
   }
   .horzline-cen-6 {
     width: 250px;

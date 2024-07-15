@@ -4148,7 +4148,7 @@ ul {
     text-align: center;
     padding: 20px;
     background-color: rgba(33, 37, 67, 255);
-    /* width: 90%; */
+    width: 95vw;
     overflow: hidden;
     overflow-x: hidden;
   }

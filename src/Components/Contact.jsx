@@ -9,7 +9,6 @@ import "aos/dist/aos.css";
 function Contact() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isSuccessPopupOpen, setIsSuccessPopupOpen] = useState(false);
-  const [isErrorPopupOpen, setIsErrorPopupOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -46,18 +45,17 @@ function Contact() {
     setMessageError(!isMessageValid);
 
     if (!isNameValid || !isEmailValid || !isMessageValid) {
-      setIsErrorPopupOpen(true); // Show error popup
       return;
     }
 
-    const serviceId = "service_sav2i1r";
+    const serviceId = "service_9eu1gbl";
     const templateId = "template_9zot3co";
     const publicKey = "xNe_IKaCy3kcvYGQO";
 
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "logapriyanlogu",
+      to_name: "shinecrafttechnologies",
       to_email: "your_email@example.com", // Replace with your actual email address
       message: message,
     };
@@ -69,8 +67,8 @@ function Contact() {
         setName("");
         setEmail("");
         setMessage("");
-        setIsSuccessPopupOpen(true); // Show success popup
         setIsPopupOpen(false); // Close the form popup
+        setIsSuccessPopupOpen(true); // Show success popup
         document.body.classList.remove("no-scroll");
       })
       .catch((error) => {

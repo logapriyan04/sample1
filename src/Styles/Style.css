@@ -5,6 +5,78 @@
 .no-scroll {
   overflow: hidden;
 }
+@keyframes customFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-aos="custom-fade-in"] {
+  opacity: 0; /* Start hidden */
+}
+
+[data-aos="custom-fade-in"].aos-animate {
+  opacity: 1;
+  animation: customFadeIn 4s forwards; /* 1s is the duration */
+}
+
+/* -------- */
+@keyframes customFadeUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-aos="custom-fade-up"] {
+  opacity: 0; /* Start hidden */
+}
+
+[data-aos="custom-fade-up"].aos-animate {
+  opacity: 1;
+  animation: customFadeIn 1s forwards; /* 1s is the duration */
+}
+/* ----- */
+
+@keyframes customFadeRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-aos="custom-fade-right"] {
+  opacity: 0; /* Start hidden */
+}
+
+[data-aos="custom-fade-right"].aos-animate {
+  opacity: 1;
+  animation: customFadeIn 1s forwards; /* 1s is the duration */
+}
+@keyframes customFadeLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-aos="custom-fade-left"] {
+  opacity: 0; /* Start hidden */
+}
+
+[data-aos="custom-fade-left"].aos-animate {
+  opacity: 1;
+  animation: customFadeIn 1s forwards; /* 1s is the duration */
+}
 
 body {
   display: flex;
@@ -871,6 +943,7 @@ ul {
 }
 /* Styles for the success popup container */
 .successPopupContainer {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -928,6 +1001,7 @@ ul {
 .successPopupContent button:hover {
   background-color: rgb(83, 210, 83);
 }
+
 .error-message {
   color: red;
   font-size: 12px;
@@ -1033,12 +1107,12 @@ ul {
   font-size: 30px;
   font-family: "CustomFont";
 }
-
+/* 
 .imgCon .initial-cards {
   padding-right: 100;
   background-color: red;
   position: absolute;
-}
+} */
 
 .Project-page1 {
   display: flex;
@@ -1071,12 +1145,12 @@ ul {
 }
 
 .imgCon {
-  position: absolute;
-  display: inline-block;
+  position: relative;
+  /* display: inline-block; */
 }
 .imgConActive {
-  position: relative;
-  display: inline-block;
+  /* position: relative; */
+  /* display: inline-block; */
 }
 
 .project-icon {
@@ -3048,18 +3122,16 @@ ul {
     margin-left: 114px;
     margin-top: -3.5px;
     margin-bottom: 4px;
-    display: none;
     /* transform-origin: top center;
     animation: grow_animation14 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 30%; */
   }
   .horzline-cen-6 {
-    width: 130px;
+    width: 250px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 10px;
     margin-top: -4.5px;
-    display: none;
     /* transform-origin: center;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
@@ -3069,8 +3141,7 @@ ul {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
     margin-top: -8px;
-    margin-right: 55px;
-    display: none;
+    margin-right: 85px;
     /* animation: linedown 3s forwards;
     transform-origin: top center;
     animation: grow_animation 4s linear forwards;
@@ -3082,7 +3153,6 @@ ul {
     height: 150px;
     margin-right: 10px;
     margin-top: -8px;
-    display: none;
     /* transform-origin: top center;
     animation: grow_animation 4s linear forwards;
     animation-timeline: view();
@@ -3090,7 +3160,7 @@ ul {
   }
 
   .second-head {
-    /* display: inline-block;
+    display: inline-block;
     align-self: center;
     background-color: #e0cffe;
     color: #402e70;
@@ -3098,18 +3168,14 @@ ul {
     padding: 1px 20px;
     align-items: center;
     font-size: 17px;
-    margin-left: 40px;
     transform: translateY(0px) translateX(-20px);
-    margin-right: -45px; */
-    display: none;
+    margin-right: 45px;
   }
   .second-H {
-    /* transform: translateX(-40px) translateY(-10px); */
-    /* margin-right: -20px; */
-    display: none;
+    transform: translateX(-40px) translateY(-10px);
   }
   .horzline-cen-7 {
-    width: 130px;
+    width: 250px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 10px;
     margin-top: -31px;
@@ -3117,7 +3183,6 @@ ul {
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%; */
-    display: none;
   }
   .first-p {
     display: none;
@@ -3612,7 +3677,7 @@ ul {
     width: 300px;
     height: 60%;
 
-    margin-top: 5%;
+    margin-top: -15%;
     justify-content: center;
     padding-left: 20%;
   }
@@ -4060,13 +4125,12 @@ ul {
     animation: grow_animation14 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
-    display: none;
   }
   .horzline-cen-6 {
     width: 246px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 8px;
-    display: none;
+
     margin-top: -10.5px;
   }
   .vert-left-3 {
@@ -4074,7 +4138,6 @@ ul {
     height: 150px;
     margin-top: -10px;
     margin-right: 82px;
-    display: none;
     /* animation: linedown 3s forwards; */
   }
   .vert-right-3 {
@@ -4082,12 +4145,10 @@ ul {
     height: 150px;
     margin-right: 8px;
     margin-top: -10px;
-    display: none;
   }
 
   .second-head {
-    display: none;
-    /* display: inline-block;
+    display: inline-block;
     align-self: center;
     background-color: #e0cffe;
     color: #402e70;
@@ -4096,11 +4157,10 @@ ul {
     align-items: center;
     font-size: 17px;
     transform: translateY(0px) translateX(-20px);
-    margin-right: 45px; */
+    margin-right: 45px;
   }
   .second-H {
-    display: none;
-    /* transform: translateX(-40px) translateY(-10px); */
+    transform: translateX(-40px) translateY(-10px);
   }
   .horzline-cen-7 {
     width: 246px;
@@ -4111,7 +4171,6 @@ ul {
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
-    display: none;
     /* transform-origin: top right; */
   }
   .first-p {

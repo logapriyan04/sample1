@@ -250,6 +250,9 @@ ul {
 }
 
 /* ------------ */
+.About {
+  /* overflow-y: hidden; */
+}
 
 .about-heading {
   position: relative;
@@ -749,26 +752,26 @@ ul {
 .popupContainer {
   position: fixed;
   display: none;
-  top: 150px;
-  /* left: 0; */
-  left: 100px;
-  width: 50%;
-  height: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   /* z-index: 100;s */
 }
+
 .popupContent {
   background: white;
-  padding: 40px;
+  padding: 20px;
   border-radius: 8px;
   width: 300px;
   max-width: 90%;
   position: relative;
   border: 0.6rem solid #f8f9fa;
-  /* top: 10%; */
+  top: 0%;
 }
 
 .closeBtn {
@@ -1031,12 +1034,21 @@ ul {
   font-family: "CustomFont";
 }
 
+.imgCon .initial-cards {
+  padding-right: 100;
+  background-color: red;
+  position: absolute;
+}
+
 .Project-page1 {
   display: flex;
   flex-direction: row;
   gap: 10%;
   justify-content: center;
+  position: relative;
+  /* display: inline-block; */
 }
+
 .Project-Name {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -1059,8 +1071,12 @@ ul {
 }
 
 .imgCon {
+  position: absolute;
+  display: inline-block;
+}
+.imgConActive {
   position: relative;
-  display: inline-block; /* Ensures proper stacking of child elements */
+  display: inline-block;
 }
 
 .project-icon {
@@ -1078,13 +1094,7 @@ ul {
 .first-p p {
   padding-left: "5%";
 }
-/* .img-cont {
-  position: "absolute";
-  margin-left: "7.1%";
-  margin-top: "90px";
-  color: "#595a5a";
-  z-index: 1;
-} */
+
 .ProjecImage {
   height: 330px;
   width: 270px;
@@ -1166,72 +1176,72 @@ ul {
   margin-top: 9px;
   margin-left: 3px;
 
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation1 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 20%;
+  animation-range: entry 0 cover 20%; */
 }
-@keyframes grow_animation1 {
+/* @keyframes grow_animation1 {
   0% {
     transform: scaleY(0);
   }
   100% {
     transform: scaleY(1);
   }
-}
+} */
 .horz-line-2 {
   width: 210px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
 
-  margin-left: 205px;
-  transform-origin: top left;
+  margin-left: 206px;
+  /* transform-origin: top left;
   animation: grow_animation2 2s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 20%;
+  animation-range: entry 0 cover 20%; */
 }
-@keyframes grow_animation2 {
+/* @keyframes grow_animation2 {
   0% {
     transform: scaleX(0);
   }
   100% {
     transform: scaleX(1);
   }
-}
+} */
 .horz-line-3 {
   width: 240px;
   border-top: 8px solid white;
-  transform-origin: top right;
+  /* transform-origin: top right;
   animation: grow_animation2 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
   margin-right: 225px;
 }
 .horzline-cen-4 {
   width: 400px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -10px;
-  transform-origin: center;
+  /* transform-origin: center;
   animation: grow_animation11 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
-@keyframes grow_animation11 {
+/* @keyframes grow_animation11 {
   0% {
     transform: scaleX(0);
   }
   100% {
     transform: scaleX(1);
   }
-}
+} */
 .horzline-cen-5 {
   width: 415px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -10px;
   margin-top: 0.5px;
-  transform-origin: center;
+  /* transform-origin: center;
   animation: grow_animation2 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 .timeline {
   display: flex;
@@ -1248,10 +1258,10 @@ ul {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 180px;
   margin-left: 27px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation3 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 30%;
+  animation-range: entry 0 cover 30%; */
   margin-top: -6px;
 }
 @keyframes grow_animation3 {
@@ -1266,55 +1276,55 @@ ul {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 180px;
   margin-left: 22px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation7 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
-@keyframes grow_animation7 {
+/* @keyframes grow_animation7 {
   0% {
     transform: scaleY(0);
   }
   100% {
     transform: scaleY(1);
   }
-}
+} */
 .vert-right {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 180px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation5 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 30%;
+  animation-range: entry 0 cover 30%; */
   margin-right: 1px;
 }
-@keyframes grow_animation5 {
+/* @keyframes grow_animation5 {
   0% {
     transform: scaleY(0);
   }
   100% {
     transform: scaleY(1);
   }
-}
+} */
 .vert-left-3 {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 180px;
+  height: 179.9px;
   margin-top: -8px;
   margin-right: 153px;
-  /* animation: linedown 3s forwards; */
+
   /* transform-origin: top center;
   animation: grow_animation 4s linear forwards;
   animation-timeline: view();
   animation-range: entry 0 cover 40%; */
 }
-@keyframes grow_animation {
+/* @keyframes grow_animation {
   0% {
     transform: scaleY(0);
   }
   100% {
     transform: scaleY(1);
   }
-}
+} */
 .vert-right-3 {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 180px;
@@ -1338,10 +1348,10 @@ ul {
   height: 370px;
   margin-right: 10px;
   margin-top: -8px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation13 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 @keyframes grow_animation13 {
   0% {
@@ -1356,10 +1366,10 @@ ul {
   height: 370px;
   margin-top: -8px;
   margin-right: 46px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation12 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 @keyframes grow_animation12 {
   0% {
@@ -1374,10 +1384,10 @@ ul {
   height: 180px;
   margin-right: 85px;
   animation-delay: 4s;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation1 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 @keyframes grow_animation1 {
   0% {
@@ -1417,11 +1427,11 @@ ul {
 .horzline-cen-1 {
   width: 452px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
-  transform-origin: top right;
+  /* transform-origin: top right;
   animation: grow_animation4 4s linear forwards;
   animation-delay: 0s;
   animation-timeline: view();
-  animation-range: entry 0 cover 30%;
+  animation-range: entry 0 cover 30%; */
   overflow: hidden;
   margin-left: 14px;
   margin-top: 0px;
@@ -1439,10 +1449,10 @@ ul {
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: 4px;
   margin-top: 0px;
-  transform-origin: top left;
+  /* transform-origin: top left;
   animation: grow_animation6 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 @keyframes grow_animation6 {
   0% {
@@ -1457,10 +1467,10 @@ ul {
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   /* margin-right: 0px; */
   margin-left: 16px;
-  transform-origin: top right;
+  /* transform-origin: top right;
   animation: grow_animation8 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 @keyframes grow_animation8 {
   0% {
@@ -1474,7 +1484,7 @@ ul {
   width: 318px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -10px;
-  /* transform-origin: top left;
+  /* transform-origin: center;
   animation: grow_animation2 4s linear forwards;
   animation-timeline: view();
   animation-range: entry 0 cover 40%; */
@@ -1484,7 +1494,7 @@ ul {
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -10px;
   margin-top: -8px;
-  /* transform-origin: top left;
+  /* transform-origin: center;
   animation: grow_animation2 4s linear forwards;
   animation-timeline: view();
   animation-range: entry 0 cover 40%; */
@@ -1556,10 +1566,10 @@ ul {
 .line-4 {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 100px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation10 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 30%;
+  animation-range: entry 0 cover 30%; */
 }
 @keyframes grow_animation10 {
   0% {
@@ -1572,10 +1582,10 @@ ul {
 .horz-line-3 {
   width: 225px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
-  transform-origin: top left;
+  /* transform-origin: top left;
   animation: grow_animation9 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
   margin-right: 221px;
 }
 @keyframes grow_animation9 {
@@ -1588,9 +1598,9 @@ ul {
 }
 .content-3 {
   margin-right: 14px;
-  /* margin-top: -100px; */
+
   text-align: left;
-  /* font-size: ; */
+
   font-family: "CustomFont";
   font-size: 15px;
 }
@@ -1603,7 +1613,7 @@ ul {
 .logo3 {
   margin-top: 40px;
   margin-left: 70px;
-  /* border: 2x solid white; */
+
   border-radius: 50px;
   border-radius: 50%;
   border: 12px solid white;
@@ -1621,7 +1631,6 @@ ul {
   justify-content: center;
   margin-left: 85px;
   margin-top: 20px;
-  /* background-color: #b5a9a9; */
 }
 .content-4 {
   margin-left: 301px;
@@ -1654,11 +1663,6 @@ ul {
   position: relative;
 }
 
-.box-2 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
 .Head-2 {
   margin-left: 50px;
 }
@@ -1689,6 +1693,7 @@ ul {
   );
   text-align: center;
 }
+
 /* --------- */
 .second-timeline {
   display: flex;
@@ -1730,10 +1735,10 @@ ul {
 .first-vert-right {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 180px;
-  transform-origin: top center;
+  /* transform-origin: top center;
   animation: grow_animation 4s linear forwards;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 40%; */
 }
 .third-timeline-2 {
   display: flex;
@@ -1805,11 +1810,14 @@ ul {
   padding: 1px 20px;
   align-items: center;
   font-size: 17px;
-  transform: translateY(40%) translateX(-40%);
+  margin-top: 20px;
+
+  /* justify-content: center; */
+  transform: translateX(-50px);
   margin-right: 45px;
 }
 .second-H {
-  transform: translateX(-43%) translateY(10%);
+  transform: translateX(-43%) translateY(-10px);
 }
 .full-contact {
   display: flex;
@@ -1850,7 +1858,77 @@ ul {
   justify-content: center;
   gap: 20px;
 }
+.Footer-1 {
+  text-align: center;
 
+  overflow-x: hidden;
+}
+
+.styled-button-1:hover {
+  color: white;
+  background-color: gray;
+}
+.styled-button-1 {
+  /* padding-top: 10px; */
+  margin-top: 10px;
+  border: 2px solid gray;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.styled-button a {
+  color: #000;
+  /* text-decoration: none; */
+}
+.styled-button a:hover {
+  color: white;
+}
+
+.styled-button {
+  color: black;
+  margin-top: 5px;
+  border: 2px solid gray;
+  /* border-radius: 10px; */
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.styled-button:hover {
+  color: white;
+  background-color: gray;
+}
+.vertical-line-container-4 {
+  display: flex;
+  border-radius: 22px;
+  border: 2px solid #b5a9a9;
+  flex-direction: column;
+  width: 38px;
+  height: 70px;
+  position: absolute;
+  /* top: 490%; */
+  left: 90%;
+  cursor: pointer;
+
+  animation: bounce 2s infinite, slideInDown 2s;
+}
+
+.vertical-line-container-4:hover {
+  color: #b5a9a9;
+  border-color: #b5a9a9;
+}
+.arrow-down-1 {
+  display: flex;
+  font-size: 50px;
+  padding-right: -10px;
+  color: #b5a9a9;
+  position: absolute; /* or position: fixed; */
+  right: 0px;
+  left: -7px;
+  transform: translateY(8px);
+}
 /* ------------------- */
 .Footer {
   text-align: center;
@@ -1869,6 +1947,7 @@ ul {
 .footer-content p {
   font-family: "Poppins", sans-serif;
   font-size: small;
+  text-align: center;
 }
 .Footer-head {
   display: flex;
@@ -1942,6 +2021,7 @@ ul {
 .text-reset {
   color: white;
   text-decoration: none;
+  border-radius: 50px;
   /* padding: 10px; */
 }
 .Footer-topic p {
@@ -1974,6 +2054,13 @@ ul {
   border-top: 2px solid gray;
   margin: 0px 0;
   margin-top: -1%;
+  /* margin-bottom: 10px; */
+}
+.footer-line-1 {
+  width: 100%;
+  border-top: 2px solid gray;
+  margin: 0px 0;
+  margin-top: 1%;
   /* margin-bottom: 10px; */
 }
 
@@ -2093,6 +2180,11 @@ ul {
   }
 
   /* /* -----------  */
+  .About {
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 
   .about-heading {
     position: relative;
@@ -2177,26 +2269,24 @@ ul {
 
   .vertical-line-1 {
     border-left: 3px solid #343434;
-    height: 120px;
+    height: 100px;
   }
   .service-para {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
+    /* background-color: #2c3e50; */
     gap: 1%;
     padding-bottom: 2%;
     font-family: "Poppins", sans-serif;
     font-size: 9px;
+    /* width: 300px; */
     /* margin-right: 100px; */
-    /* padding-right: 10%; */
-    /* background-color: #2c3e50; */
-    /* left: 19%; */
-    margin-left: -90px;
+    margin-left: -80px;
   }
   .service-para p {
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
     width: 350px;
+    font-size: 8.5px;
   }
   .horizontal-line {
     width: 80%;
@@ -2257,7 +2347,7 @@ ul {
     padding-top: 5%;
 
     background-color: #121212;
-    height: 700px;
+    height: 582px;
     width: 100vw;
     overflow-x: hidden;
   }
@@ -2304,10 +2394,11 @@ ul {
 
   .btn-1 {
     display: flex;
-
+    justify-content: center;
     gap: 10px;
 
-    right: 120px;
+    /* bottom: 150px; */
+    right: 130px;
   }
   .btn-1 button {
     border-radius: 100px;
@@ -2484,25 +2575,26 @@ ul {
   .popupContainer {
     position: fixed;
     display: none;
-    top: 0;
-    left: 70px;
+    top: 150px;
+    /* left: 0; */
+    left: 100px;
     width: 50%;
     height: 50%;
-    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: left;
-    align-items: left;
-    transform: translateY(150px);
+    justify-content: center;
+    align-items: center;
+    /* z-index: 100;s */
   }
-
   .popupContent {
     background: white;
-    padding: 35px;
+    padding: 40px;
     border-radius: 8px;
-    height: 280px;
+    width: 300px;
+    max-width: 90%;
     position: relative;
     border: 0.6rem solid #f8f9fa;
-    top: 10%;
+    /* top: 10%; */
   }
 
   .closeBtn {
@@ -2613,6 +2705,9 @@ ul {
     width: 100vw;
     overflow-x: hidden;
     /* align-items: left; */
+    border-bottom: 5px solid #eeedec;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
   }
   .logo-2 {
     display: flex;
@@ -2696,18 +2791,27 @@ ul {
     padding-bottom: 3%;
     /* text-align: center; */
   }
+  .ProjecImage {
+    height: 300px;
+    width: 250px;
+    border: "none";
+    border-radius: "35px";
+  }
+
   .Project-page1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     text-align: center;
-    margin-left: -31px;
+    /* margin-left: -21px; */
     justify-content: center;
   }
   .Project-Name {
     font-family: "Poppins", sans-serif;
-    margin-top: 8%;
+    margin-top: 2%;
+    margin-left: -3px;
+    /* margin-right: 10px; */
   }
   /* ------------------ */
   .Experiance {
@@ -2718,10 +2822,10 @@ ul {
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-top: 0.1px;
     margin-left: 145px;
-    transform-origin: top left;
+    /* transform-origin: top left;
     animation: grow_animation2 2s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 20%;
+    animation-range: entry 0 cover 20%; */
   }
   .timeline {
     display: flex;
@@ -2734,13 +2838,13 @@ ul {
   }
   .vert-left-1 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 150px;
+    height: 151px;
     margin-left: 27.7px;
-    transform-origin: top center;
+    /* transform-origin: top center;
     animation: grow_animation3 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
-    margin-top: -5px;
+    animation-range: entry 0 cover 30%; */
+    margin-top: -4px;
   }
   .horz-line {
     display: flex;
@@ -2752,11 +2856,11 @@ ul {
   .horzline-cen-1 {
     width: 300px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
-    transform-origin: top right;
+    /* transform-origin: top right;
     animation: grow_animation4 4s linear forwards;
     animation-delay: 0s;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 30%; */
     overflow: hidden;
     margin-left: 14px;
     margin-top: -12.5px;
@@ -2780,22 +2884,23 @@ ul {
   }
   .vert-right {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 150px;
-    transform-origin: top center;
+    height: 151px;
+    margin-top: 1px;
+    /* transform-origin: top center;
     animation: grow_animation5 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 30%; */
     /* margin-left: 335px; */
   }
   .horzline-cen-2 {
-    width: 300px;
+    width: 301px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
-    margin-right: 1px;
-    margin-top: -10px;
-    transform-origin: top left;
+    margin-right: 2px;
+    margin-top: -9px;
+    /* transform-origin: top left;
     animation: grow_animation6 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .timeline-2 {
     display: flex;
@@ -2812,10 +2917,11 @@ ul {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
     margin-left: 0px;
-    transform-origin: top center;
+    margin-top: 2px;
+    /* transform-origin: top center;
     animation: grow_animation7 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .content-2 {
     margin-right: 40px;
@@ -2828,10 +2934,10 @@ ul {
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     /* margin-right: 0px; */
     margin-left: 14px;
-    transform-origin: top right;
+    /* transform-origin: top right;
     animation: grow_animation8 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
     margin-top: -10px;
   }
   .vert-right-1 {
@@ -2839,11 +2945,11 @@ ul {
     height: 150px;
     margin-right: 14px;
     margin-top: 13px;
-    animation-delay: 4s;
-    transform-origin: top center;
+    /* animation-delay: 4s; */
+    /* transform-origin: top center;
     animation: grow_animation1 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .Year-4 {
     font-family: "CustomFont";
@@ -2853,10 +2959,10 @@ ul {
     width: 160px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     transform-origin: top left;
-    animation: grow_animation9 4s linear forwards;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
     margin-right: 142px;
+    /* animation: grow_animation9 4s linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%; */
   }
   .content-3 {
     margin-right: 14px;
@@ -2874,33 +2980,33 @@ ul {
     margin-top: -8px;
   }
   .horzline-cen-4 {
-    width: 280px;
+    width: 278.5px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -10px;
-    transform-origin: center;
+    /* transform-origin: center;
     animation: grow_animation11 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .vert-left-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 298px;
     margin-top: -8px;
     margin-right: -75px;
-    transform-origin: top center;
+    /* transform-origin: top center;
     animation: grow_animation12 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .vert-right-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 298px;
     margin-right: -10px;
     margin-top: -8px;
-    transform-origin: top center;
+    /* transform-origin: top center;
     animation: grow_animation13 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .logo3 {
     height: 100px;
@@ -2915,12 +3021,11 @@ ul {
   .logo-Name-1 {
     display: flex;
     flex-direction: column;
-    /* background-color: #2c3e50; */
+
     width: 150px;
     justify-content: center;
     margin-left: 130px;
     margin-top: 10px;
-    /* background-color: #b5a9a9; */
   }
   .Year-5 {
     margin-left: 83px;
@@ -2928,20 +3033,20 @@ ul {
     font-family: "CustomFont";
   }
   .horzline-cen-5 {
-    width: 280px;
+    width: 278.5px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -10px;
-    margin-top: -22px;
-    transform-origin: center;
+    margin-top: -19.5px;
+    /* transform-origin: center;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 40%; */
   }
   .line-5 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 80px;
-    margin-left: 100px;
-    margin-top: -6px;
+    margin-left: 114px;
+    margin-top: -3.5px;
     margin-bottom: 4px;
     /* transform-origin: top center;
     animation: grow_animation14 4s linear forwards;
@@ -2952,19 +3057,19 @@ ul {
     width: 250px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 10px;
-    /* transform-origin: top left;
+    margin-top: -4.5px;
+    /* transform-origin: center;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%; */
-    margin-top: -4.5px;
   }
   .vert-left-3 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
     margin-top: -8px;
     margin-right: 85px;
-    /* animation: linedown 3s forwards; */
-    /* transform-origin: top center;
+    /* animation: linedown 3s forwards;
+    transform-origin: top center;
     animation: grow_animation 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%; */
@@ -2989,18 +3094,18 @@ ul {
     padding: 1px 20px;
     align-items: center;
     font-size: 17px;
-    transform: translateY(29%) translateX(-10%);
+    transform: translateY(0px) translateX(-20px);
     margin-right: 45px;
   }
   .second-H {
-    transform: translateX(-23%) translateY(3%);
+    transform: translateX(-40px) translateY(-10px);
   }
   .horzline-cen-7 {
     width: 250px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 10px;
-    margin-top: -11px;
-    /* transform-origin: top left;
+    margin-top: -31px;
+    /* transform-origin: center;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%; */
@@ -3035,11 +3140,26 @@ ul {
     padding-left: 0%;
   }
 
+  .vertical-line-container-4 {
+    display: flex;
+    border-radius: 22px;
+    border: 2px solid #b5a9a9;
+    flex-direction: column;
+    width: 39px;
+    height: 70px;
+    position: absolute;
+    /* top: 490%; */
+    left: 70%;
+    margin-top: 30px;
+    cursor: pointer;
+    animation: bounce 2s infinite, slideInDown 2s;
+  }
+
   /* /* --------------------  */
   .Footer {
     text-align: center;
     padding: 20px;
-    background-color: #121212;
+    background-color: rgba(33, 37, 67, 255);
     width: 90%;
     overflow: hidden;
   }
@@ -3065,7 +3185,7 @@ ul {
     font-weight: bold;
     margin: 0;
     font-family: "CustomFont";
-
+    padding-top: 10px;
     padding-bottom: 10px;
     color: white;
   }
@@ -3701,14 +3821,14 @@ ul {
     overflow-x: hidden;
   }
   .horz-line-2 {
-    width: 150px;
+    width: 153px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-top: 0.1px;
-    margin-left: 145px;
-    transform-origin: top left;
+    margin-left: 148px;
+    /* transform-origin: top left;
     animation: grow_animation2 2s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 20%;
+    animation-range: entry 0 cover 20%; */
   }
   .timeline {
     display: flex;
@@ -3801,7 +3921,8 @@ ul {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
     margin-left: 0px;
-    margin-right: 30px;
+    margin-right: 29px;
+    margin-top: 0.5px;
     transform-origin: top center;
     animation: grow_animation7 4s linear forwards;
     animation-timeline: view();
@@ -3838,7 +3959,7 @@ ul {
   .vert-right-1 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
-    margin-right: 15px;
+    margin-right: 14px;
     margin-top: 13px;
     animation-delay: 4s;
     transform-origin: top center;
@@ -3867,7 +3988,7 @@ ul {
     margin-top: -8px;
   }
   .horzline-cen-4 {
-    width: 282px;
+    width: 278px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -10px;
     transform-origin: center;
@@ -3911,37 +4032,37 @@ ul {
     margin-left: 83px;
     margin-top: -21px;
     font-family: "CustomFont";
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
   }
   .horzline-cen-5 {
-    width: 280px;
+    width: 278px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -10px;
-    margin-top: -22px;
+    margin-top: -7.5px;
   }
 
   .line-5 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 80px;
     margin-left: 100px;
-    margin-top: -6px;
+    margin-top: 7.5px;
     margin-bottom: 4px;
-    /* transform-origin: top center;
-      animation: grow_animation14 4s linear forwards;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%; */
+    transform-origin: top center;
+    animation: grow_animation14 4s linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
   }
   .horzline-cen-6 {
-    width: 250px;
+    width: 246px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
-    margin-right: 10px;
+    margin-right: 8px;
 
-    margin-top: -4.5px;
+    margin-top: -10.5px;
   }
   .vert-left-3 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
-    margin-top: -8px;
+    margin-top: -10px;
     margin-right: 82px;
     /* animation: linedown 3s forwards; */
   }
@@ -3949,7 +4070,7 @@ ul {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 150px;
     margin-right: 8px;
-    margin-top: -8px;
+    margin-top: -10px;
   }
 
   .second-head {
@@ -3961,18 +4082,18 @@ ul {
     padding: 1px 20px;
     align-items: center;
     font-size: 17px;
-    transform: translateY(29%) translateX(-10%);
+    transform: translateY(0px) translateX(-20px);
     margin-right: 45px;
   }
   .second-H {
-    transform: translateX(-23%) translateY(3%);
+    transform: translateX(-40px) translateY(-10px);
   }
   .horzline-cen-7 {
-    width: 250px;
+    width: 246px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
-    margin-right: 10px;
-    margin-top: -10px;
-    transform-origin: top left;
+    margin-right: 8px;
+    margin-top: -32.5px;
+    transform-origin: center;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
@@ -4011,7 +4132,7 @@ ul {
   .Footer {
     text-align: center;
     padding: 20px;
-    background-color: #121212;
+    background-color: rgba(33, 37, 67, 255);
     /* width: 90%; */
     overflow: hidden;
     overflow-x: hidden;
@@ -4038,7 +4159,7 @@ ul {
     font-weight: bold;
     margin: 0;
     font-family: "CustomFont";
-
+    padding-top: 10px;
     padding-bottom: 10px;
     color: white;
   }
@@ -4267,14 +4388,14 @@ ul {
     overflow-x: hidden;
   }
   .horz-line-2 {
-    width: 150px;
+    width: 151.5px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-top: 0.1px;
-    margin-left: 145px;
-    transform-origin: top left;
+    margin-left: 147px;
+    /* transform-origin: top left;
     animation: grow_animation2 2s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 20%;
+    animation-range: entry 0 cover 20%; */
   }
   .timeline {
     display: flex;
@@ -4480,23 +4601,23 @@ ul {
     width: 280px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -10px;
-    margin-top: -22px;
+    margin-top: -8.5px;
   }
   .line-5 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
     height: 80px;
     margin-left: 100px;
-    margin-top: -6px;
+    margin-top: 7.5px;
     margin-bottom: 4px;
-    /* transform-origin: top center;
+    transform-origin: top center;
     animation: grow_animation14 4s linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%; */
+    animation-range: entry 0 cover 30%;
   }
   .horzline-cen-6 {
-    width: 250px;
+    width: 246px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
-    margin-right: 10px;
+    margin-right: 8px;
 
     margin-top: -4.5px;
   }
@@ -4523,18 +4644,18 @@ ul {
     padding: 1px 20px;
     align-items: center;
     font-size: 17px;
-    transform: translateY(29%) translateX(-10%);
+    transform: translateY(0px) translateX(-12px);
     margin-right: 45px;
   }
   .second-H {
-    transform: translateX(-23%) translateY(3%);
+    transform: translateX(-33px) translateY(-10px);
   }
   .horzline-cen-7 {
-    width: 250px;
+    width: 246px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
-    margin-right: 10px;
-    margin-top: -10px;
-    transform-origin: top left;
+    margin-right: 8px;
+    margin-top: -30.5px;
+    transform-origin: center;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;

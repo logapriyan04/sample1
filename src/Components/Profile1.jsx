@@ -8,7 +8,7 @@ import ProjectL from "../Assests/images/projectimg-2.jpg";
 import ProjectC from "../Assests/images/image2.jpeg";
 import ProjectR from "../Assests/images/cycle2.jpg";
 import { MdAddCall } from "react-icons/md";
-
+import { HiMiniArrowLongUp } from "react-icons/hi2";
 import "animate.css";
 import { MdEmail } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io";
@@ -432,41 +432,91 @@ function Profile1() {
         <div className="horz-line">
           <div className="horzline-cen-7"></div>
         </div>
+        <button
+          className="vertical-line-container-4"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <HiMiniArrowLongUp className="arrow-down-1" />
+        </button>
         {/*  */}
-        <div style={{ paddingTop: "5%" }}>
-          <div className="fullline-1"></div>
-          <div className="contact-foot">
-            <div className="line-content">
-              <div className="full-content">
-                <h5>SHINECRAFT TECHNOLOGIES</h5>
+        <div className="footer-line-1" style={{ marginTop: "110px" }}></div>
+        <div style={{ paddingTop: "0%" }}>
+          <div className="Footer-1" style={{ overflowY: "hidden" }}>
+            <div className="Footer-head">
+              <div className="Footer-1">
+                <h6>SHINECRAFT TECHNOLOGIES</h6>
 
                 <p>CREATE | CRAFT | CONNECT</p>
+
+                <button className="styled-button-1">
+                  {" "}
+                  <Link to="/">
+                    {" "}
+                    <a href="/">HOME</a>
+                  </Link>
+                </button>
               </div>
-              <div className="full-contact">
-                <h5>CONTACT</h5>
-                <div className="contact-item-1">
+
+              <div className="Footer-topic">
+                <h6>PROFILE</h6>
+                <p>
+                  <button className="styled-button">
+                    <a
+                      href="/Ajithkumar resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-reset"
+                    >
+                      CV
+                    </a>
+                  </button>
+                </p>
+                <p>
+                  <button className="styled-button">
+                    <a
+                      href="https://drive.google.com/drive/folders/1XBf268PVYfvYixI4kwc4bET3Dkx22gfH"
+                      className="text-reset"
+                    >
+                      DRIVE
+                    </a>
+                  </button>
+                </p>
+                <p>
+                  <button className="styled-button">
+                    <a
+                      href="http://www.linkedin.com/in/ajith-kumar-v-5671862a2"
+                      target="_blank"
+                      className="text-reset"
+                    >
+                      LINKDIN
+                    </a>
+                  </button>
+                </p>
+              </div>
+              <div className="Footer-contact">
+                <h6>CONTACT</h6>
+                <div className="contact-item">
                   <MdAddCall className="contact-icon" />
                   <p>+91-8220647389</p>
                 </div>
-                <div className="contact-item-1">
+                <div className="contact-item">
                   <MdEmail className="contact-icon" />
                   <p>ajith@shincrafttechnologies.com</p>
                 </div>
               </div>
             </div>
-            <div className="para-foot">
-              <div className="footer-content-1">
-                <p>@2024| Alrights reserved</p>
-              </div>
-              <div className="Footer-icons-1">
-                <IoLogoGithub className="social-icon" />
+            <div className="footer-line-1"></div>
+            <div className="footer-content">
+              <p>@2024| Alrights reserved</p>
+            </div>
+            <div className="Footer-icons">
+              <IoLogoGithub className="social-icon" />
 
-                <CiLinkedin className="social-icon" />
+              <CiLinkedin className="social-icon" />
 
-                <FaInstagram className="social-icon" />
+              <FaInstagram className="social-icon" />
 
-                <IoLogoFacebook className="social-icon" />
-              </div>
+              <IoLogoFacebook className="social-icon" />
             </div>
           </div>
         </div>

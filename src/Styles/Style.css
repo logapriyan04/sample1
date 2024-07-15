@@ -3048,6 +3048,7 @@ ul {
     margin-left: 114px;
     margin-top: -3.5px;
     margin-bottom: 4px;
+    display: none;
     /* transform-origin: top center;
     animation: grow_animation14 4s linear forwards;
     animation-timeline: view();
@@ -3058,6 +3059,7 @@ ul {
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 10px;
     margin-top: -4.5px;
+    display: none;
     /* transform-origin: center;
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
@@ -3068,7 +3070,7 @@ ul {
     height: 150px;
     margin-top: -8px;
     margin-right: 55px;
-
+    display: none;
     /* animation: linedown 3s forwards;
     transform-origin: top center;
     animation: grow_animation 4s linear forwards;
@@ -3080,6 +3082,7 @@ ul {
     height: 150px;
     margin-right: 10px;
     margin-top: -8px;
+    display: none;
     /* transform-origin: top center;
     animation: grow_animation 4s linear forwards;
     animation-timeline: view();
@@ -3087,7 +3090,7 @@ ul {
   }
 
   .second-head {
-    display: inline-block;
+    /* display: inline-block;
     align-self: center;
     background-color: #e0cffe;
     color: #402e70;
@@ -3095,13 +3098,15 @@ ul {
     padding: 1px 20px;
     align-items: center;
     font-size: 17px;
-    /* margin-left: 40px; */
-    /* transform: translateY(0px) translateX(-20px); */
-    margin-right: -45px;
+    margin-left: 40px;
+    transform: translateY(0px) translateX(-20px);
+    margin-right: -45px; */
+    display: none;
   }
   .second-H {
     /* transform: translateX(-40px) translateY(-10px); */
-    margin-right: -20px;
+    /* margin-right: -20px; */
+    display: none;
   }
   .horzline-cen-7 {
     width: 130px;
@@ -3112,6 +3117,7 @@ ul {
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%; */
+    display: none;
   }
   .first-p {
     display: none;

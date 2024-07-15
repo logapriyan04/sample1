@@ -4054,12 +4054,13 @@ ul {
     animation: grow_animation14 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
+    display: none;
   }
   .horzline-cen-6 {
     width: 246px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 8px;
-
+    display: none;
     margin-top: -10.5px;
   }
   .vert-left-3 {
@@ -4067,6 +4068,7 @@ ul {
     height: 150px;
     margin-top: -10px;
     margin-right: 82px;
+    display: none;
     /* animation: linedown 3s forwards; */
   }
   .vert-right-3 {
@@ -4074,10 +4076,12 @@ ul {
     height: 150px;
     margin-right: 8px;
     margin-top: -10px;
+    display: none;
   }
 
   .second-head {
-    display: inline-block;
+    display: none;
+    /* display: inline-block;
     align-self: center;
     background-color: #e0cffe;
     color: #402e70;
@@ -4086,10 +4090,11 @@ ul {
     align-items: center;
     font-size: 17px;
     transform: translateY(0px) translateX(-20px);
-    margin-right: 45px;
+    margin-right: 45px; */
   }
   .second-H {
-    transform: translateX(-40px) translateY(-10px);
+    display: none;
+    /* transform: translateX(-40px) translateY(-10px); */
   }
   .horzline-cen-7 {
     width: 246px;
@@ -4100,6 +4105,7 @@ ul {
     animation: grow_animation2 4s linear forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
+    display: none;
     /* transform-origin: top right; */
   }
   .first-p {

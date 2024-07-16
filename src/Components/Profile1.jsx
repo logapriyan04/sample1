@@ -248,201 +248,207 @@ function Profile1() {
       </div>
       {/* --------------------- */}
       <div className="Experiance" style={{ paddingTop: "5%" }}>
-        <div className="Head-1">
-          <div className="first-head">
-            <h3>WHAT A</h3>
+        <div className="experiance-2">
+          <div className="Head-1">
+            <div className="first-head">
+              <h3>WHAT A</h3>
+            </div>
+            <h1>YEAR</h1>
           </div>
-          <h1>YEAR</h1>
-        </div>
-        <div className="Container-scroll">
-          <div className="line-1" data-aos="fade-up"></div>
-          <div className="scroll-name" data-aos="fade-up">
-            <h1>scroll</h1>
+          <div className="Container-scroll">
+            <div className="line-1" data-aos="fade-up"></div>
+            <div className="scroll-name" data-aos="fade-up">
+              <h1>scroll</h1>
+            </div>
+            <div className="line-3" ref={line3Ref}></div>
+            <div className="horz-line-2" data-aos="custom-fade-right"></div>
           </div>
-          <div className="line-3" ref={line3Ref}></div>
-          <div className="horz-line-2" data-aos="custom-fade-right"></div>
-        </div>
-        {/* --- */}
-        <div className="timeline">
-          <div className="Year-1" data-aos="custom-fade-in">
-            <h2>2017 - 2018</h2>
-          </div>
+          {/* --- */}
+          <div className="timeline">
+            <div className="Year-1" data-aos="custom-fade-in">
+              <h2>2017 - 2018</h2>
+            </div>
 
-          <div className="vert-left-1"></div>
-          <div className="first-p">
-            <p
-              style={{ textAlign: "left", marginLeft: "15px" }}
-              data-aos="custom-fade-right"
-            >
-              {" "}
-              My role is to develop a hardware-embedded<br></br> projectin the
-              electrical and electronics<br></br> domain based on the student
-              and industry <br></br>requirements. I worked on most of the
-              Digital/ <br></br>Analog sensors and communications
-            </p>
-          </div>
-        </div>
-        {/*  */}
-        <div className="horz-line">
-          <div className="horzline-cen-1"></div>
-        </div>
-        {/*  */}
-        <div className="timeline-1">
-          <div className="first-p" data-aos="custom-fade-left">
-            <p style={{ textAlign: "left", marginRight: "15px" }}>
-              {" "}
-              My role is to design and develop the product,<br></br> covering
-              aspects from ideation, prototyping,<br></br> design, and
-              commercialization. Below are the<br></br> domains. I have worked
-              on during product<br></br> development.
-            </p>
-          </div>
-          <div className="vert-right "></div>
-          <div className="Year-2" data-aos="custom-fade-in">
-            <h2>2019 - 2022</h2>
-          </div>
-          <div className="content-1" data-aos="custom-fade-up">
-            <h6>
-              PRODUCT DEVELOPMENT ENGINEER <br></br>
-              <span style={{ fontSize: "9px" }}>TECHTIL INFO SOLUTION</span>
-            </h6>
-          </div>
-        </div>
-        {/*  */}
-        <div className="horz-line">
-          <div className="horzline-cen-2"></div>
-        </div>
-        {/*  */}
-        <div className="timeline-2">
-          <div className="content-2" data-aos="custom-fade-up">
-            <h6>
-              CO FOUNDER AND COO <br></br>
-              <span style={{ fontSize: "9px" }}> SCHOPIQ AUTOMATION</span>
-            </h6>
-          </div>
-          <div className="Year-3" data-aos="custom-fade-in">
-            <h2>2021 - 2022</h2>
-          </div>
-          <div className="vertical-left-1"></div>
-          <div className="first-p" data-aos="custom-fade-right">
-            <p style={{ textAlign: "left", marginLeft: "15px" }}>
-              {" "}
-              My role is to manage the software <br></br>developer team, Project
-              planning <br></br>and workschedule for the team.
-            </p>
-          </div>
-        </div>
-        {/*  */}
-        <div className="horz-line">
-          <div className="horzline-cen-3"></div>
-        </div>
-        {/*  */}
-        <div className="timeline-1">
-          <div className="first-p" data-aos="custom-fade-left">
-            <p style={{ textAlign: "left", marginRight: "15px" }}>
-              {" "}
-              My role is to design and develop the product,<br></br> covering
-              aspects from ideation, prototyping,<br></br> design, and
-              commercialization. Below are the<br></br> domains. I have worked
-              on during product<br></br> development.
-            </p>
-          </div>
-          <div className="vert-right-1"></div>
-          <div className="Year-4" data-aos="custom-fade-in">
-            <h2>2022 - 2023</h2>
-          </div>
-          <div
-            className="content-1"
-            style={{ transform: "translateX(-40px)" }}
-            data-aos="custom-fade-up"
-          >
-            <h6>
-              PROJECT MANAGER <br></br>
-              <span style={{ fontSize: "9px" }}>APPIKORN</span>
-            </h6>
+            <div className="vert-left-1"></div>
+            <div className="first-p">
+              <p
+                style={{ textAlign: "left", marginLeft: "15px" }}
+                data-aos="custom-fade-right"
+              >
+                {" "}
+                My role is to develop a hardware-embedded<br></br> projectin the
+                electrical and electronics<br></br> domain based on the student
+                and industry <br></br>requirements. I worked on most of the
+                Digital/ <br></br>Analog sensors and communications
+              </p>
+            </div>
           </div>
           {/*  */}
-        </div>
-        <div className="horz-line">
-          <div className="horz-line-3"></div>
-        </div>
-        <div className="horz-ver">
-          <div className="content-3" data-aos="custom-fade-up">
-            <h6>
-              PRODUCT DEVELOPMENT ENGINEER <br></br>
-              <span style={{ fontSize: "9px" }}>CHEMIN C&I Pvt Ltd</span>
-            </h6>
+          <div className="horz-line">
+            <div className="horzline-cen-1"></div>
           </div>
-          <div className="line-4"></div>
-        </div>
-        {/*  */}
-        <div className="horz-line">
-          <div className="horzline-cen-4"></div>
-        </div>
-        <div className="box-1">
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <div className="vert-left-2"></div>
-            <div>
-              <img
-                src={logo3}
-                alt="Logo"
-                className="logo3"
-                data-aos="zoom-in"
-                style={{ height: "150px", width: "150px" }}
-              />
-              <div className="logo-Name-1">
-                <img
-                  src={logoRight}
-                  alt="logoRight"
-                  className="logo-RightName"
-                />
-                <img src={logoLeft} alt="logoleft" className="logo-LeftName" />
-              </div>
-              <div className="Year-5">
-                <h2>2024</h2>
-              </div>
-              <div className="content-4">
-                <h6>FOUNDED</h6>
-              </div>
+          {/*  */}
+          <div className="timeline-1">
+            <div className="first-p" data-aos="custom-fade-left">
+              <p style={{ textAlign: "left", marginRight: "15px" }}>
+                {" "}
+                My role is to design and develop the product,<br></br> covering
+                aspects from ideation, prototyping,<br></br> design, and
+                commercialization. Below are the<br></br> domains. I have worked
+                on during product<br></br> development.
+              </p>
+            </div>
+            <div className="vert-right "></div>
+            <div className="Year-2" data-aos="custom-fade-in">
+              <h2>2019 - 2022</h2>
+            </div>
+            <div className="content-1" data-aos="custom-fade-up">
+              <h6>
+                PRODUCT DEVELOPMENT ENGINEER <br></br>
+                <span style={{ fontSize: "9px" }}>TECHTIL INFO SOLUTION</span>
+              </h6>
             </div>
           </div>
-          <div className="vert-right-2"></div>
-        </div>
-        {/*  */}
-        <div className="horz-line">
-          <div className="horzline-cen-5"></div>
-        </div>
-        {/*  */}
-        <div className="horz-ver">
-          <div className="line-5"></div>
-        </div>
-        {/*  */}
-        <div className="horz-line">
-          <div className="horzline-cen-6"></div>
-        </div>
-        {/*  */}
-        <div className="box-2">
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <div className="vert-left-3"></div>
+          {/*  */}
+          <div className="horz-line">
+            <div className="horzline-cen-2"></div>
+          </div>
+          {/*  */}
+          <div className="timeline-2">
+            <div className="content-2" data-aos="custom-fade-up">
+              <h6>
+                CO FOUNDER AND COO <br></br>
+                <span style={{ fontSize: "9px" }}> SCHOPIQ AUTOMATION</span>
+              </h6>
+            </div>
+            <div className="Year-3" data-aos="custom-fade-in">
+              <h2>2021 - 2022</h2>
+            </div>
+            <div className="vertical-left-1"></div>
+            <div className="first-p" data-aos="custom-fade-right">
+              <p style={{ textAlign: "left", marginLeft: "15px" }}>
+                {" "}
+                My role is to manage the software <br></br>developer team,
+                Project planning <br></br>and workschedule for the team.
+              </p>
+            </div>
+          </div>
+          {/*  */}
+          <div className="horz-line">
+            <div className="horzline-cen-3"></div>
+          </div>
+          {/*  */}
+          <div className="timeline-1">
+            <div className="first-p" data-aos="custom-fade-left">
+              <p style={{ textAlign: "left", marginRight: "15px" }}>
+                {" "}
+                My role is to design and develop the product,<br></br> covering
+                aspects from ideation, prototyping,<br></br> design, and
+                commercialization. Below are the<br></br> domains. I have worked
+                on during product<br></br> development.
+              </p>
+            </div>
+            <div className="vert-right-1"></div>
+            <div className="Year-4" data-aos="custom-fade-in">
+              <h2>2022 - 2023</h2>
+            </div>
             <div
-              style={{
-                textAlign: "center",
-              }}
+              className="content-1"
+              style={{ transform: "translateX(-40px)" }}
+              data-aos="custom-fade-up"
             >
-              <div className="second-head">
-                <h3>WHAT A</h3>
-              </div>
-              <div className="second-H">
-                <h1>YEAR</h1>
+              <h6>
+                PROJECT MANAGER <br></br>
+                <span style={{ fontSize: "9px" }}>APPIKORN</span>
+              </h6>
+            </div>
+            {/*  */}
+          </div>
+          <div className="horz-line">
+            <div className="horz-line-3"></div>
+          </div>
+          <div className="horz-ver">
+            <div className="content-3" data-aos="custom-fade-up">
+              <h6>
+                PRODUCT DEVELOPMENT ENGINEER <br></br>
+                <span style={{ fontSize: "9px" }}>CHEMIN C&I Pvt Ltd</span>
+              </h6>
+            </div>
+            <div className="line-4"></div>
+          </div>
+          {/*  */}
+          <div className="horz-line">
+            <div className="horzline-cen-4"></div>
+          </div>
+          <div className="box-1">
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div className="vert-left-2"></div>
+              <div>
+                <img
+                  src={logo3}
+                  alt="Logo"
+                  className="logo3"
+                  data-aos="zoom-in"
+                  style={{ height: "150px", width: "150px" }}
+                />
+                <div className="logo-Name-1">
+                  <img
+                    src={logoRight}
+                    alt="logoRight"
+                    className="logo-RightName"
+                  />
+                  <img
+                    src={logoLeft}
+                    alt="logoleft"
+                    className="logo-LeftName"
+                  />
+                </div>
+                <div className="Year-5">
+                  <h2>2024</h2>
+                </div>
+                <div className="content-4">
+                  <h6>FOUNDED</h6>
+                </div>
               </div>
             </div>
+            <div className="vert-right-2"></div>
           </div>
+          {/*  */}
+          <div className="horz-line">
+            <div className="horzline-cen-5"></div>
+          </div>
+          {/*  */}
+          <div className="horz-ver">
+            <div className="line-5"></div>
+          </div>
+          {/*  */}
+          <div className="horz-line">
+            <div className="horzline-cen-6"></div>
+          </div>
+          {/*  */}
+          <div className="box-2">
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div className="vert-left-3"></div>
+              <div
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                <div className="second-head">
+                  <h3>WHAT A</h3>
+                </div>
+                <div className="second-H">
+                  <h1>YEAR</h1>
+                </div>
+              </div>
+            </div>
 
-          <div className="vert-right-3"></div>
-        </div>
-        {/*  */}
-        <div className="horz-line">
-          <div className="horzline-cen-7"></div>
+            <div className="vert-right-3"></div>
+          </div>
+          {/*  */}
+          <div className="horz-line">
+            <div className="horzline-cen-7"></div>
+          </div>
         </div>
         <button
           className="vertical-line-container-4"

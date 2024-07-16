@@ -2890,6 +2890,9 @@ ul {
   /* ------------------ */
   .Experiance {
     overflow-x: hidden;
+    /* width: 316px; */
+  }
+  .experiance-2 {
     width: 316px;
   }
   .horz-line-2 {

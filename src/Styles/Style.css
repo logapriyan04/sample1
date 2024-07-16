@@ -2654,7 +2654,7 @@ ul {
     padding-top: 13%;
     padding-bottom: 13%;
     overflow-x: hidden;
-    width: 100vw;
+    /* width: 100vw; */
     font-family: "CustomFont";
   }
   .main-conntent-1 {
@@ -2666,7 +2666,7 @@ ul {
     padding-bottom: 5%;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100vw;
+    /* width: 100vw; */
   }
   .profile-projects h2 {
     padding-left: 15%;
@@ -2732,7 +2732,7 @@ ul {
     );
     color: white;
     padding-bottom: 1%;
-    width: 100vw;
+    /* width: 100vw; */
   }
   .Head-1 {
     margin-top: 40px;

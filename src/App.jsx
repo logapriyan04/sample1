@@ -7,8 +7,9 @@ import "./Styles/Style.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Firstpage from "./Components/Firstpage";
-import Profile1 from "./Components/Profile1";
+
 import Secondprofile from "./Components/Secondprofile";
+import Ajith from "./Components/ajith";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/sample1" Component={Firstpage}></Route>
 
-            <Route path="/Profile1" Component={Profile1}></Route>
+            <Route path="/ajith" Component={Ajith}></Route>
             <Route path="/Secondprofile" Component={Secondprofile}></Route>
           </Routes>
           {/* <Footer /> */}

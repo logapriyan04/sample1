@@ -23,8 +23,7 @@ function Footer() {
           <p>CREATE | CRAFT | CONNECT</p>
 
           <h3>
-            <Link to="/Profile1">FOUNDER - AJITHKUMAR</Link>{" "}
-            <BsBoxArrowUpRight />
+            <Link to="/ajith">FOUNDER - AJITHKUMAR</Link> <BsBoxArrowUpRight />
             <br></br>
           </h3>
           <h3>

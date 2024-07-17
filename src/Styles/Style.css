@@ -2654,7 +2654,7 @@ ul {
     padding-top: 13%;
     padding-bottom: 13%;
     overflow-x: hidden;
-    /* width: 100vw; */
+    width: 100vw;
     font-family: "CustomFont";
   }
   .main-conntent-1 {
@@ -2666,7 +2666,7 @@ ul {
     padding-bottom: 5%;
     overflow-x: hidden;
     overflow-y: hidden;
-    /* width: 100vw; */
+    width: 100vw;
   }
   .profile-projects h2 {
     padding-left: 15%;
@@ -2792,8 +2792,8 @@ ul {
   .horz-line-2 {
     /* height: 0; */
     width: 137px;
-
-    margin-left: 132px;
+    transform: translateX(-37px);
+    /* margin-left: 132px; */
   }
   .horz-line-3 {
     width: 240px;
@@ -2812,8 +2812,9 @@ ul {
     margin-top: -8px;
   }
   .timeline {
-    margin-left: 156px;
-    margin-top: -4px;
+    transform: translateX(-297px) translateY(-33px);
+    /* margin-left: 156px; */
+    /* margin-top: -4px; */
   }
   .vert-left-1 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
@@ -2852,7 +2853,9 @@ ul {
   }
   .Year-1 {
     font-family: "CustomFont";
-    margin-top: 70px;
+    /* margin-top: 70px; */
+
+    transform: translateX(-20px) translateY(-50px);
     font-size: 12px;
   }
   .Year-2 {
@@ -2882,11 +2885,11 @@ ul {
   }
   .horzline-cen-1 {
     width: 260px;
-
+    transform: translateX(8px) translateY(-82px);
     overflow: hidden;
-    margin-right: -48px;
+    /* margin-right: -48px; */
     margin-left: 0px;
-    margin-top: -2px;
+    /* margin-top: -2px; */
   }
   .horzline-cen-2 {
     width: 260px;
@@ -2911,9 +2914,10 @@ ul {
     margin-top: -8px;
   }
   .timeline-1 {
-    margin-left: 1px;
-    margin-right: 0px;
-    margin-top: 0px;
+    transform: translateX(1px) translateY(-10px);
+    /* margin-left: 1px; */
+    /* margin-right: 0px; */
+    /* margin-top: 0px; */
   }
   .Container-scroll {
     display: flex;
@@ -3050,6 +3054,7 @@ ul {
   .first-p {
     display: none;
   }
+  /* ----- */
   .full-contact {
     gap: 20px;
     font-family: "Poppins", sans-serif;

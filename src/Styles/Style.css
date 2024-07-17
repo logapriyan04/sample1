@@ -2792,8 +2792,7 @@ ul {
   .horz-line-2 {
     /* height: 0; */
     width: 137px;
-    transform: translateX(-37px);
-    /* margin-left: 132px; */
+    margin-left: 132px;
   }
   .horz-line-3 {
     width: 240px;
@@ -2812,9 +2811,8 @@ ul {
     margin-top: -8px;
   }
   .timeline {
-    transform: translateX(-297px) translateY(-33px);
-    /* margin-left: 156px; */
-    /* margin-top: -4px; */
+    margin-left: 156px;
+    margin-top: -4px;
   }
   .vert-left-1 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
@@ -2846,16 +2844,16 @@ ul {
     margin-right: 25px;
   }
   .vert-right-1 {
-    height: 126px;
+    border-left: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: 0px;
-    margin-left: 24px;
-    margin-top: 0px;
+    height: 126px;
+    margin-left: 0px;
+    /* margin-top: 0px; */
+    position: relative;
   }
   .Year-1 {
     font-family: "CustomFont";
-    /* margin-top: 70px; */
-
-    transform: translateX(-20px) translateY(-50px);
+    margin-top: 70px;
     font-size: 12px;
   }
   .Year-2 {
@@ -2885,11 +2883,11 @@ ul {
   }
   .horzline-cen-1 {
     width: 260px;
-    transform: translateX(8px) translateY(-82px);
+
     overflow: hidden;
-    /* margin-right: -48px; */
+    margin-right: -48px;
     margin-left: 0px;
-    /* margin-top: -2px; */
+    margin-top: -2px;
   }
   .horzline-cen-2 {
     width: 260px;
@@ -2914,10 +2912,13 @@ ul {
     margin-top: -8px;
   }
   .timeline-1 {
-    transform: translateX(1px) translateY(-10px);
-    /* margin-left: 1px; */
-    /* margin-right: 0px; */
-    /* margin-top: 0px; */
+    /* margin-left: 75px;
+    margin-right: 65px; */
+    margin: 0px auto;
+    width: 245px;
+    margin-top: 0px;
+    background-color: red;
+    position: relative;
   }
   .Container-scroll {
     display: flex;

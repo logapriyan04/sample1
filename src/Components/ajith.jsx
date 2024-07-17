@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import logo2 from "../Assests/images/logo.png";
-
+import logoRight1 from "../Assests/images/name1.png";
+import logoLeft1 from "../Assests/images/name2.png";
 import profile from "../Assests/images/profilepic.jpg";
 import ProjectL from "../Assests/images/projectimg-2.jpg";
 import ProjectC from "../Assests/images/image2.jpeg";
@@ -44,7 +45,7 @@ const ProjectsData = [
 function Ajith() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -59,9 +60,9 @@ function Ajith() {
               style={{ height: "50px", width: "50px" }}
             />
           </div>
-          <div className="logo-Name">
-            {/* <img src={logoRight} alt="logoRight" className="logo-RightName" />
-            <img src={logoLeft} alt="logoleft" className="logo-LeftName" /> */}
+          <div className="logo-Name-1">
+            <img src={logoRight1} alt="logoRight" className="logo-RightName1" />
+            <img src={logoLeft1} alt="logoleft" className="logo-LeftName2" />
           </div>
           <div style={{ display: "flex" }}>
             <a

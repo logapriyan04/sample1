@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logoTop from "../Assests/images/logo.png";
-import logoRight from "../Assests/images/name1.png";
-import logoLeft from "../Assests/images/name2.png";
+import logoRight1 from "../Assests/images/name1.png";
+import logoLeft1 from "../Assests/images/name2.png";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
@@ -61,9 +61,9 @@ function Header() {
         <div className="logo-Header">
           <img src={logoTop} alt="Logo" className="logo-top" />
         </div>
-        <div className="logo-Name">
-          <img src={logoRight} alt="logoRight" className="logo-RightName" />
-          <img src={logoLeft} alt="logoleft" className="logo-LeftName" />
+        <div className="logo-Name-1">
+          <img src={logoRight1} alt="logoRight" className="logo-RightName1" />
+          <img src={logoLeft1} alt="logoleft" className="logo-LeftName2" />
         </div>
       </div>
 

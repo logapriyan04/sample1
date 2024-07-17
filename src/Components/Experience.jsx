@@ -23,7 +23,7 @@ function Experience() {
         <div className="scroll-name" data-aos="fade-up">
           <h1>scroll</h1>
         </div>
-        <div className="line-3" data-aos="grow-line"></div>
+        <div className="line-3"></div>
         <div className="horz-line-2"></div>
       </div>
       {/* Timeline Section */}
@@ -140,11 +140,11 @@ function Experience() {
       </div>
       {/* Logo Section */}
       <div className="box-1">
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div className="box-content">
           <div className="vert-left-2"></div>
-          <div>
+          <div className="box-item">
             <img src={logo3} alt="Logo" className="logo3" data-aos="zoom-in" />
-            <div className="logo-Name-1">
+            <div className="logo-Name-2">
               <img src={logoRight} alt="logoRight" className="logo-RightName" />
               <img src={logoLeft} alt="logoleft" className="logo-LeftName" />
             </div>

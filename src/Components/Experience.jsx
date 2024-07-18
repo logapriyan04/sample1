@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HiMiniArrowLongUp } from "react-icons/hi2";
 import { MdEmail, MdAddCall } from "react-icons/md";
 import { IoLogoGithub, IoLogoFacebook } from "react-icons/io";
@@ -8,8 +8,17 @@ import { Link } from "react-router-dom";
 import logo3 from "../Assests/images/logo.png";
 import logoRight from "../Assests/images/name1.png";
 import logoLeft from "../Assests/images/name2.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Experience() {
+  useEffect(() => {
+    Aos.init();
+  });
+  // useEffect(() => {
+  //   Aos.init({ duration: 2000 });
+
+  // });
   return (
     <div className="Experience" style={{ paddingTop: "5%" }}>
       <div className="Head-1">
@@ -23,15 +32,15 @@ function Experience() {
         <div className="scroll-name" data-aos="fade-up">
           <h1>scroll</h1>
         </div>
-        <div className="line-3"></div>
-        <div className="horz-line-2"></div>
+        <div className="line-3" data-aos="grow-line"></div>
+        <div className="horz-line-2" data-aos="grow-line-left"></div>
       </div>
       {/* Timeline Section */}
       <div className="timeline">
         <div className="Year-1" data-aos="custom-fade-in">
           <h2>2017 - 2018</h2>
         </div>
-        <div className="vert-left-1"></div>
+        <div className="vert-left-1" data-aos="grow-line-down"></div>
         <div className="first-p">
           <p
             style={{ textAlign: "left", marginLeft: "15px" }}
@@ -46,7 +55,7 @@ function Experience() {
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horzline-cen-1"></div>
+        <div className="horzline-cen-1" data-aos="grow-line-right"></div>
       </div>
       {/* Timeline Section */}
       <div className="timeline-1">
@@ -58,7 +67,7 @@ function Experience() {
             during product<br></br> development.
           </p>
         </div>
-        <div className="vert-right"></div>
+        <div className="vert-right" data-aos="grow-line-down-right"></div>
         <div className="Year-2" data-aos="custom-fade-in">
           <h2>2019 - 2022</h2>
         </div>
@@ -71,7 +80,7 @@ function Experience() {
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horzline-cen-2"></div>
+        <div className="horzline-cen-2" data-aos="grow-line-left-2"></div>
       </div>
       {/* Timeline Section */}
       <div className="timeline-2">
@@ -84,7 +93,7 @@ function Experience() {
         <div className="Year-3" data-aos="custom-fade-in">
           <h2>2021 - 2022</h2>
         </div>
-        <div className="vertical-left-1"></div>
+        <div className="vertical-left-1" data-aos="grow-line-down-left-2"></div>
         <div className="first-p" data-aos="custom-fade-right">
           <p style={{ textAlign: "left", marginLeft: "15px" }}>
             My role is to manage the software <br></br>developer team, Project
@@ -94,7 +103,7 @@ function Experience() {
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horzline-cen-3"></div>
+        <div className="horzline-cen-3" data-aos="grow-line-right-2"></div>
       </div>
       {/* Timeline Section */}
       <div className="timeline-1">
@@ -106,7 +115,7 @@ function Experience() {
             during product<br></br> development.
           </p>
         </div>
-        <div className="vert-right-1"></div>
+        <div className="vert-right-1" data-aos="grow-line-down-right-2"></div>
         <div className="Year-4" data-aos="custom-fade-in">
           <h2>2022 - 2023</h2>
         </div>
@@ -123,7 +132,7 @@ function Experience() {
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horz-line-3"></div>
+        <div className="horz-line-3" data-aos="grow-line-left-3"></div>
       </div>
       <div className="horz-ver">
         <div className="content-3">
@@ -132,16 +141,16 @@ function Experience() {
             <span style={{ fontSize: "9px" }}>CHEMIN C&I Pvt Ltd</span>
           </h6>
         </div>
-        <div className="line-4"></div>
+        <div className="line-4" data-aos="grow-line-down-3"></div>
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horzline-cen-4"></div>
+        <div className="horzline-cen-4" data-aos="grow-line-center"></div>
       </div>
       {/* Logo Section */}
       <div className="box-1">
         <div className="box-content">
-          <div className="vert-left-2"></div>
+          <div className="vert-left-2" data-aos="grow-line-down-left-3"></div>
           <div className="box-item">
             <img src={logo3} alt="Logo" className="logo3" data-aos="zoom-in" />
             <div className="logo-Name-2">
@@ -158,23 +167,29 @@ function Experience() {
             </div>
           </div>
         </div>
-        <div className="vert-right-2"></div>
+        <div className="vert-right-2" data-aos="grow-line-down-right-3"></div>
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horzline-cen-5"></div>
+        <div
+          className="horzline-cen-5"
+          data-aos="grow-line-center-reverse"
+        ></div>
       </div>
       {/* Horizontal Line */}
       <div className="horz-ver">
-        <div className="line-5"></div>
+        <div className="line-5" data-aos="grow-line-down-4"></div>
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horzline-cen-6"></div>
+        <div
+          className="horzline-cen-6"
+          data-aos="grow-line-center-left-right"
+        ></div>
       </div>
       {/* Box Section */}
       <div className="box-2">
-        <div className="vert-left-3"></div>
+        <div className="vert-left-3" data-aos="grow-line-down-5"></div>
         <div className="text-container">
           <div className="second-head">
             <h3>WHAT A</h3>
@@ -183,11 +198,14 @@ function Experience() {
             <h1>YEAR</h1>
           </div>
         </div>
-        <div className="vert-right-3"></div>
+        <div className="vert-right-3" data-aos="grow-line-down-6"></div>
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">
-        <div className="horzline-cen-7"></div>
+        <div
+          className="horzline-cen-7"
+          data-aos="grow-line-center-left-right-2"
+        ></div>
       </div>
       {/* Scroll to Top Button */}
       <button

@@ -83,52 +83,43 @@
     height: 0;
   }
   to {
-    height: 110px; /* Adjust this value to your desired final height */
+    height: 110px;
   }
 }
 
 [data-aos="grow-line"] {
-  opacity: 1;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
 }
 
 [data-aos="grow-line"].aos-animate {
-  animation: growLine 1s forwards; /* 1s is the duration */
+  opacity: 1;
+  animation: growLine 1s forwards;
 }
 /* --------- */
-/* @keyframes growLineRight {
+@keyframes growLineLeft {
   0% {
     transform: scaleX(0);
   }
   100% {
     transform: scaleX(1);
   }
-} */
+}
 
 .horz-line-2 {
-  height: 0;
   width: 210px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   transform-origin: left;
+  transform: scaleX(0); /* Ensure the initial scale is 0 */
   margin-left: 206px;
+  opacity: 0; /* Ensure it's initially hidden */
 }
 
-/* [data-aos="grow-line-right"] {
-  opacity: 1;
-  transform-origin: left;
-}
-
-[data-aos="grow-line-right"].aos-animate {
-  animation: growLineRight 0.7s linear forwards;
+[data-aos="grow-line-left"].aos-animate {
+  opacity: 1; /* Make it visible when animation starts */
+  animation: growLineLeft 0.7s linear forwards;
   animation-delay: 0.5s;
-} */
-/* ------- */
-@keyframes growLineDown {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
 }
 
 /* Apply animation when triggered */
@@ -142,7 +133,30 @@
   animation-delay: 1.2s;
 }
 /* ------------------- */
-@keyframes growLineLeft {
+.vert-left-1 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 180px;
+  margin-left: 27px;
+  margin-top: -6px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+[data-aos="grow-line-down"].aos-animate {
+  opacity: 1; /* Make visible when animation starts */
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 1.2s; /* Delay to start after the horizontal line animation */
+}
+/* -------------------- */
+@keyframes growLineRight {
   0% {
     transform: scaleX(0);
   }
@@ -151,24 +165,333 @@
   }
 }
 
-.horz-line-2 {
-  height: 0;
-  width: 210px;
+.horzline-cen-1 {
+  width: 452px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
+  overflow: hidden;
+  margin-left: 14px;
+  margin-top: 0px;
   transform-origin: right;
-  margin-left: 206px;
+  transform: scaleX(0); /* Initial scale */
+  opacity: 0;
 }
-
-[data-aos="grow-line-left"] {
-  opacity: 1;
-  transform-origin: right;
-}
-
 [data-aos="grow-line-right"].aos-animate {
+  opacity: 1; /* Make visible when animation starts */
   animation: growLineRight 0.7s linear forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1.7s; /* Delay to start after the vertical line animation */
+}
+/* ---------------------- */
+.vert-right {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 180px;
+  margin-right: 1px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineRight {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+[data-aos="grow-line-down-right"].aos-animate {
+  opacity: 1; /* Make visible when animation starts */
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 2.5s; /* Delay to start after the horizontal line animation */
+}
+/* ------------ */
+.horzline-cen-2 {
+  width: 449.5px;
+  border-top: 8px solid rgba(255, 255, 255, 0.819);
+  margin-right: 4px;
+  margin-top: 0px;
+  transform-origin: left;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineLeftReverse {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+[data-aos="grow-line-left-2"].aos-animate {
+  opacity: 1; /* Make visible when animation starts */
+  animation: growLineLeftReverse 0.7s linear forwards;
+  animation-delay: 2.8s; /* Delay to start after the vertical line animation */
+}
+/* -------------------- */
+.vertical-left-1 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 180px;
+  margin-left: 22px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineLeftReverse {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+[data-aos="grow-line-down-left-2"].aos-animate {
+  opacity: 1; /* Make visible when animation starts */
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 3.3s;
+}
+/* --------------------- */
+.horzline-cen-3 {
+  width: 445.5px;
+  border-top: 8px solid rgba(255, 255, 255, 0.819);
+  margin-left: 16px;
+  transform-origin: right; /* Change the origin to left */
+  transform: scaleX(0); /* Initial scale */
+  opacity: 0; /* Initially hidden */
+}
+@keyframes growLineRight {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+[data-aos="grow-line-right-2"].aos-animate {
+  opacity: 1; /* Make visible when animation starts */
+  animation: growLineRight 0.7s linear forwards;
+  animation-delay: 4s; /* Delay to start after the vertical line animation */
+}
+/* --------------- */
+.vert-right-1 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 180px;
+  margin-right: 85px;
+  animation-delay: 4s;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+[data-aos="grow-line-down-right-2"].aos-animate {
+  opacity: 1; /* Make visible when animation starts */
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 5s; /* Delay to start after the horizontal line animation */
+}
+/* ----------------- */
+.horz-line-3 {
+  width: 240px;
+  border-top: 8px solid white;
+  margin-right: 225px;
+  transform-origin: left; /* Change origin to right */
+  transform: scaleX(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineLeftReverse {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+[data-aos="grow-line-left-3"].aos-animate {
+  opacity: 1;
+  animation: growLineLeft 0.7s linear forwards;
+  animation-delay: 4s;
+}
+/* ------------------- */
+.line-4 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 100px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+[data-aos="grow-line-down-3"].aos-animate {
+  opacity: 1;
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 5s; /* Delay to start after horz-line-3 animation */
+}
+/* -------------------- */
+.horzline-cen-4 {
+  width: 305px;
+  border-top: 8px solid rgba(255, 255, 255, 0.819);
+  margin-right: -10px;
+  transform-origin: center; /* Origin at center */
+  transform: scaleX(0); /* Initial scale */
+  opacity: 0;
 }
 
+@keyframes growLineCenter {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+[data-aos="grow-line-center"].aos-animate {
+  opacity: 1;
+  animation: growLineCenter 0.7s linear forwards;
+  animation-delay: 6s; /* Delay to start after line-4 animation */
+}
+/* ------------- */
+.vert-left-2 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 340px;
+  margin-top: -8px;
+  margin-right: 65px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+[data-aos="grow-line-down-left-3"].aos-animate {
+  opacity: 1;
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 7s; /* Delay to start after horzline-cen-4 */
+}
+/* ----------------- */
+.vert-right-2 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 340px;
+  margin-right: 10px;
+  margin-top: -8px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+[data-aos="grow-line-down-right-3"].aos-animate {
+  opacity: 1;
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 7s;
+}
+/* ----------------- */
+.horzline-cen-5 {
+  width: 305px;
+  border-top: 8px solid rgba(255, 255, 255, 0.819);
+  margin-right: -10px;
+  margin-top: -8px;
+  transform-origin: center; /* Origin at center */
+  transform: scaleX(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineCenterReverse {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+[data-aos="grow-line-center-reverse"].aos-animate {
+  opacity: 1;
+  animation: growLineCenterReverse 0.7s linear forwards;
+  animation-delay: 4s; /* Adjust delay as needed */
+}
+/* ----------- */
+.line-5 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 100px;
+  margin-left: 200px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+[data-aos="grow-line-down-4"].aos-animate {
+  opacity: 1;
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 6s; /* Adjust delay as needed */
+}
+/* --------------- */
+.horzline-cen-6 {
+  width: 244.5px;
+  border-top: 8px solid rgba(255, 255, 255, 0.819);
+  margin-right: -20px;
+  transform-origin: center; /* Set transform origin to center */
+  transform: scaleX(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineCenterLeftRight {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+[data-aos="grow-line-center-left-right"].aos-animate {
+  opacity: 1;
+  animation: growLineCenterLeftRight 1s ease-out forwards;
+  animation-delay: 8s;
+}
+/* ------------ */
+.vert-left-3 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 179.9px;
+  margin-top: -8px;
+  margin-right: 40px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0; /* Adjust this margin to move the line to the right */
+}
+[data-aos="grow-line-down-5"].aos-animate {
+  opacity: 1;
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 9s; /* Adjust delay as needed */
+}
+/* ------------------- */
+.vert-right-3 {
+  border-left: 8px solid rgba(255, 255, 255, 0.819);
+  height: 180px;
+  margin-left: 40px; /* Adjust this margin to move the line to the left */
+  margin-top: -8px;
+  transform-origin: top;
+  transform: scaleY(0); /* Initial scale */
+  opacity: 0;
+}
+[data-aos="grow-line-down-6"].aos-animate {
+  opacity: 1;
+  animation: growLineDown 0.7s linear forwards;
+  animation-delay: 9s; /* Adjust delay as needed */
+}
+/* ---------------- */
+.horzline-cen-7 {
+  width: 244.5px;
+  border-top: 8px solid rgba(255, 255, 255, 0.819);
+  margin-right: -20px;
+  margin-top: -8px;
+  transform-origin: left; /* Adjust origin as needed */
+  transform: scaleX(0); /* Initial scale */
+  opacity: 0;
+}
+@keyframes growLineCenterLeftRight2 {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+[data-aos="grow-line-center-left-right-2"].aos-animate {
+  opacity: 1;
+  animation: growLineCenterLeftRight2 0.7s linear forwards;
+  animation-delay: 10s; /* Adjust delay as needed */
+}
 /* --- */
 body {
   display: flex;
@@ -1325,22 +1648,7 @@ ul {
   margin-top: 9px;
   margin-left: 3px;
 }
-.horz-line-3 {
-  width: 240px;
-  border-top: 8px solid white;
-  margin-right: 225px;
-}
-.horzline-cen-4 {
-  width: 305px;
-  border-top: 8px solid rgba(255, 255, 255, 0.819);
-  margin-right: -10px;
-}
-.horzline-cen-5 {
-  width: 305px;
-  border-top: 8px solid rgba(255, 255, 255, 0.819);
-  margin-right: -10px;
-  margin-top: -8px;
-}
+
 .timeline {
   display: flex;
   position: relative;
@@ -1350,41 +1658,7 @@ ul {
   margin-top: -2px;
   text-align: center;
 }
-.vert-left-1 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 180px;
-  margin-left: 27px;
-  margin-top: -6px;
-}
-.vertical-left-1 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 180px;
-  margin-left: 22px;
-}
-.vert-right {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 180px;
-  margin-right: 1px;
-}
 
-.vert-right-2 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 340px;
-  margin-right: 10px;
-  margin-top: -8px;
-}
-.vert-left-2 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 340px;
-  margin-top: -8px;
-  margin-right: 65px;
-}
-.vert-right-1 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 180px;
-  margin-right: 85px;
-  animation-delay: 4s;
-}
 .Year-1 {
   font-family: "CustomFont";
   margin-top: 100px;
@@ -1408,35 +1682,7 @@ ul {
   position: relative;
   margin-right: 20px;
 }
-.horzline-cen-1 {
-  width: 452px;
-  border-top: 8px solid rgba(255, 255, 255, 0.819);
-  overflow: hidden;
-  margin-left: 14px;
-  margin-top: 0px;
-}
-.horzline-cen-2 {
-  width: 449.5px;
-  border-top: 8px solid rgba(255, 255, 255, 0.819);
-  margin-right: 4px;
-  margin-top: 0px;
-}
-.horzline-cen-3 {
-  width: 445.5px;
-  border-top: 8px solid rgba(255, 255, 255, 0.819);
-  margin-left: 16px;
-}
-.horzline-cen-6 {
-  width: 244.5px;
-  border-top: 8px solid rgba(255, 255, 255, 0.819);
-  margin-right: -20px;
-}
-.horzline-cen-7 {
-  width: 244.5px;
-  border-top: 8px solid rgba(255, 255, 255, 0.819);
-  margin-right: -20px;
-  margin-top: -8px;
-}
+
 .timeline-1 {
   display: flex;
   position: relative;
@@ -1490,16 +1736,7 @@ ul {
   position: relative;
   margin-right: 212px;
 }
-.line-4 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 100px;
-}
-.line-5 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 100px;
-  margin-left: 200px;
-  /* align-items: center; */
-}
+
 .horz-line-3 {
   width: 225px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
@@ -1573,20 +1810,6 @@ ul {
 .content-4 {
   transform: translateX(100px) translateY(22px);
   font-family: "CustomFont";
-}
-
-.vert-left-3 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 179.9px;
-  margin-top: -8px;
-  margin-right: 40px; /* Adjust this margin to move the line to the right */
-}
-
-.vert-right-3 {
-  border-left: 8px solid rgba(255, 255, 255, 0.819);
-  height: 180px;
-  margin-left: 40px; /* Adjust this margin to move the line to the left */
-  margin-top: -8px;
 }
 
 .text-container {
@@ -2811,8 +3034,9 @@ ul {
   .horz-line-2 {
     /* height: 0; */
     width: 137px;
-    transform: translateY(-4px) translateX(-36px);
-    /* margin-right: 0px; */
+    /* transform: translateY(-4px) translateX(-36px); */
+    margin-right: 73px;
+    margin-top: -4px;
     /* margin-left: 132px; */
   }
   .horz-line-3 {
@@ -3926,9 +4150,9 @@ ul {
   .horz-line-2 {
     /* height: 0; */
     width: 136px;
-    transform: translateY(-4px) translateX(-37px);
-    /* margin-right: 0px; */
-    /* margin-left: 132px; */
+    /* transform: translateY(-4px) translateX(-37px); */
+    margin-right: 73px;
+    margin-top: -4px;
   }
   .horz-line-3 {
     width: 240px;
@@ -4613,9 +4837,9 @@ ul {
   .horz-line-2 {
     /* height: 0; */
     width: 136px;
-    transform: translateY(-4px) translateX(-37px);
-    /* margin-right: 0px; */
-    /* margin-left: 132px; */
+    /* transform: translateY(-4px) translateX(-37px); */
+    margin-right: 73px;
+    margin-top: -4px;
   }
   .horz-line-3 {
     width: 240px;

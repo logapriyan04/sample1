@@ -124,11 +124,12 @@ function Ajith() {
           <div className="profile-para">
             <p>
               Innovative and creative EEE Engineer with 5+ years of experience
-              in designing and developing electronic systems. I have developed &
-              executed about 250+ projects and 3+ products in my career.
-              Extremely motivated to constantly develop my skills and grow
-              professionally. I am confident in my ability to come up with
-              interesting innovative ideas.
+              <br></br>
+              in designing and developing electronic systems. I have developed
+              <br></br> & executed about 250+ projects and 3+ products in my
+              career.<br></br> Extremely motivated to constantly develop my
+              skills and grow <br></br>professionally. I am confident in my
+              ability to come up with<br></br> interesting innovative ideas.
             </p>
           </div>
         </div>

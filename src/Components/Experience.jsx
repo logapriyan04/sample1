@@ -177,7 +177,7 @@ function Experience() {
         ></div>
       </div>
       {/* Horizontal Line */}
-      <div className="horz-ver">
+      <div className="horz-ver-1">
         <div className="line-5" data-aos="grow-line-down-4"></div>
       </div>
       {/* Horizontal Line */}

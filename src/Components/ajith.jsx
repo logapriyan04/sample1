@@ -7,7 +7,6 @@ import ProjectL from "../Assests/images/projectimg-2.jpg";
 import ProjectC from "../Assests/images/image2.jpeg";
 import ProjectR from "../Assests/images/cycle2.jpg";
 
-import "animate.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -53,12 +52,14 @@ function Ajith() {
       <div className="logo-nav">
         <div className="logo-2">
           <div className="logo">
-            <img
-              src={logo2}
-              alt="Logo"
-              className="logo2"
-              style={{ height: "50px", width: "50px" }}
-            />
+            <Link to="/">
+              <img
+                src={logo2}
+                alt="Logo"
+                className="logo2"
+                style={{ height: "50px", width: "50px" }}
+              />
+            </Link>
           </div>
           <div className="logo-Name-1">
             <img src={logoRight1} alt="logoRight" className="logo-RightName1" />
@@ -112,24 +113,28 @@ function Ajith() {
         <div className="main-content-1">
           <h1>Hi! Meet AJITH KUMAR V</h1>
           <h2>
-            Founder-Product Development Engineer,
+            Founder-Shine Craft Technologies
+            <br /> Product Development Engineer,
             <br /> Electronic Systems
           </h2>
         </div>
       </div>
       <div className="profile-projects">
-        <h2 data-aos="fade-up">PRODUCTS DEVELOPED</h2>
+        <h2 data-aos="fade-up">PRODUCTS CRAFTED</h2>
         <div className="profile-2" data-aos="fade-up">
           <div className="profile-line"></div>
           <div className="profile-para">
             <p>
-              Innovative and creative EEE Engineer with 5+ years of experience
-              <br></br>
-              in designing and developing electronic systems. I have developed
-              <br></br> & executed about 250+ projects and 3+ products in my
-              career.<br></br> Extremely motivated to constantly develop my
-              skills and grow <br></br>professionally. I am confident in my
-              ability to come up with<br></br> interesting innovative ideas.
+              As the founder of Shine Craft Technologies, I bring over 6+ years
+              of experience <br></br> as an innovative and creative EEE Engineer
+              specializing in designing and <br></br> developing of IOT
+              products. Throughout my career, I have successfully <br></br>
+              developed and executed over 250 projects andlaunched more than{" "}
+              <br></br> 3 products. My unwavering motivation to continually
+              develop my skills and grow <br></br> professionally drives me to
+              lead our company with a relentless pursuit of innovation.{" "}
+              <br></br>I am confident in our ability to generate groundbreaking
+              ideas and deliver <br></br> exceptional solutions.
             </p>
           </div>
         </div>

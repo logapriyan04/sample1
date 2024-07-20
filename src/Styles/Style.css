@@ -5,6 +5,9 @@
 .no-scroll {
   overflow: hidden;
 }
+/* ----------service animation--------- */
+
+/* -------- */
 @keyframes customFadeIn {
   0% {
     opacity: 0;
@@ -95,7 +98,7 @@
 
 [data-aos="grow-line"].aos-animate {
   opacity: 1;
-  animation: growLine 1s forwards;
+  animation: growLine 0.4s forwards;
 }
 /* --------- */
 @keyframes growLineLeft {
@@ -118,8 +121,8 @@
 
 [data-aos="grow-line-left"].aos-animate {
   opacity: 1;
-  animation: growLineLeft 0.7s linear forwards;
-  animation-delay: 0.3s;
+  animation: growLineLeft 0.4s linear forwards;
+  /* animation-delay: 0.3s; */
 }
 
 /* ------------------- */
@@ -142,8 +145,8 @@
 }
 [data-aos="grow-line-down"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.3s linear forwards;
-  animation-delay: 1s;
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 1s; */
 }
 /* -------------------- */
 @keyframes growLineRight {
@@ -167,8 +170,8 @@
 }
 [data-aos="grow-line-right"].aos-animate {
   opacity: 1; /* Make visible when animation starts */
-  animation: growLineRight 0.3s linear forwards;
-  animation-delay: 1.3s; /* Delay to start after the vertical line animation */
+  animation: growLineRight 0.5s linear forwards;
+  /* animation-delay: 1.3s;  */
 }
 /* ---------------------- */
 .vert-right {
@@ -190,8 +193,8 @@
 }
 [data-aos="grow-line-down-right"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.3s linear forwards;
-  animation-delay: 1.7s;
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 1.7s; */
 }
 /* ------------ */
 .horzline-cen-2 {
@@ -214,8 +217,8 @@
 }
 [data-aos="grow-line-left-2"].aos-animate {
   opacity: 1;
-  animation: growLineLeftReverse 0.3s linear forwards;
-  animation-delay: 2s;
+  animation: growLineLeftReverse 0.5s linear forwards;
+  /* animation-delay: 1.8s; */
 }
 /* -------------------- */
 .vertical-left-1 {
@@ -237,8 +240,8 @@
 }
 [data-aos="grow-line-down-left-2"].aos-animate {
   opacity: 1; /* Make visible when animation starts */
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 3.3s;
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 2s; */
 }
 /* --------------------- */
 .horzline-cen-3 {
@@ -259,8 +262,8 @@
 }
 [data-aos="grow-line-right-2"].aos-animate {
   opacity: 1; /* Make visible when animation starts */
-  animation: growLineRight 0.7s linear forwards;
-  animation-delay: 4s; /* Delay to start after the vertical line animation */
+  animation: growLineRight 0.5s linear forwards;
+  /* animation-delay: 2s;  */
 }
 /* --------------- */
 .vert-right-1 {
@@ -274,16 +277,16 @@
 }
 [data-aos="grow-line-down-right-2"].aos-animate {
   opacity: 1; /* Make visible when animation starts */
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 5s; /* Delay to start after the horizontal line animation */
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 2.2s;  */
 }
 /* ----------------- */
 .horz-line-3 {
   width: 216px;
   border-top: 8px solid white;
   margin-right: 216px;
-  transform-origin: left; /* Change origin to right */
-  transform: scaleX(0); /* Initial scale */
+  transform-origin: left;
+  transform: scaleX(0);
   opacity: 0;
 }
 @keyframes growLineLeftReverse {
@@ -296,36 +299,30 @@
 }
 [data-aos="grow-line-left-3"].aos-animate {
   opacity: 1;
-  animation: growLineLeft 0.7s linear forwards;
-  animation-delay: 4s;
+  animation: growLineLeft 0.5s linear forwards;
+  /* animation-delay: 2.3s; */
 }
 /* ------------------- */
 .line-4 {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 100px;
-  /* position: relative; */
+
   transform-origin: top;
-  transform: scaleY(0); /* Initial scale */
+  transform: scaleY(0);
   opacity: 0;
-  /* margin-right: 0px; */
-  /* margin-left: 0px; */
-
-  /* position: absolute; */
-
-  /* align-items: end; */
 }
 [data-aos="grow-line-down-3"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 5s; /* Delay to start after horz-line-3 animation */
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 2.4s; */
 }
 /* -------------------- */
 .horzline-cen-4 {
   width: 305px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -10px;
-  transform-origin: center; /* Origin at center */
-  transform: scaleX(0); /* Initial scale */
+  transform-origin: center;
+  transform: scaleX(0);
   opacity: 0;
 }
 
@@ -340,8 +337,8 @@
 
 [data-aos="grow-line-center"].aos-animate {
   opacity: 1;
-  animation: growLineCenter 0.7s linear forwards;
-  animation-delay: 6s; /* Delay to start after line-4 animation */
+  animation: growLineCenter 0.5s linear forwards;
+  /* animation-delay: 2.5s;  */
 }
 /* ------------- */
 .vert-left-2 {
@@ -355,8 +352,8 @@
 }
 [data-aos="grow-line-down-left-3"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 7s; /* Delay to start after horzline-cen-4 */
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 2.6s;  */
 }
 /* ----------------- */
 .vert-right-2 {
@@ -365,13 +362,13 @@
   margin-right: 10px;
   margin-top: -8px;
   transform-origin: top;
-  transform: scaleY(0); /* Initial scale */
+  transform: scaleY(0);
   opacity: 0;
 }
 [data-aos="grow-line-down-right-3"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 7s;
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 2.6s; */
 }
 /* ----------------- */
 .horzline-cen-5 {
@@ -394,8 +391,8 @@
 
 [data-aos="grow-line-center-reverse"].aos-animate {
   opacity: 1;
-  animation: growLineCenterReverse 0.7s linear forwards;
-  animation-delay: 4s; /* Adjust delay as needed */
+  animation: growLineCenterReverse 0.5s linear forwards;
+  /* animation-delay: 2.7s;  */
 }
 /* ----------- */
 .line-5 {
@@ -408,16 +405,16 @@
 }
 [data-aos="grow-line-down-4"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 6s; /* Adjust delay as needed */
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 2.8s;  */
 }
 /* --------------- */
 .horzline-cen-6 {
-  width: 244.5px;
+  width: 176px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -20px;
-  transform-origin: center; /* Set transform origin to center */
-  transform: scaleX(0); /* Initial scale */
+  transform-origin: center;
+  transform: scaleX(0);
   opacity: 0;
 }
 @keyframes growLineCenterLeftRight {
@@ -433,47 +430,45 @@
 }
 [data-aos="grow-line-center-left-right"].aos-animate {
   opacity: 1;
-  animation: growLineCenterLeftRight 1s ease-out forwards;
-  animation-delay: 8s;
+  animation: growLineCenterLeftRight 0.5s ease-out forwards;
+  /* animation-delay: 2.9s; */
 }
 /* ------------ */
 .vert-left-3 {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 179.9px;
-  margin-top: -8px;
-  margin-right: 40px;
+  /* position: relative; */
   transform-origin: top;
-  transform: scaleY(0); /* Initial scale */
-  opacity: 0; /* Adjust this margin to move the line to the right */
+  transform: scaleY(0);
+  opacity: 0;
 }
 [data-aos="grow-line-down-5"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 9s; /* Adjust delay as needed */
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 3s;  */
 }
 /* ------------------- */
 .vert-right-3 {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 180px;
-  margin-left: 40px; /* Adjust this margin to move the line to the left */
-  margin-top: -8px;
+
   transform-origin: top;
-  transform: scaleY(0); /* Initial scale */
+  transform: scaleY(0);
   opacity: 0;
 }
 [data-aos="grow-line-down-6"].aos-animate {
   opacity: 1;
-  animation: growLineDown 0.7s linear forwards;
-  animation-delay: 9s; /* Adjust delay as needed */
+  animation: growLineDown 0.5s linear forwards;
+  /* animation-delay: 3s; */
 }
 /* ---------------- */
 .horzline-cen-7 {
-  width: 244.5px;
+  width: 160px;
   border-top: 8px solid rgba(255, 255, 255, 0.819);
   margin-right: -20px;
   margin-top: -8px;
-  transform-origin: left; /* Adjust origin as needed */
-  transform: scaleX(0); /* Initial scale */
+  transform-origin: left;
+  transform: scaleX(0);
   opacity: 0;
 }
 @keyframes growLineCenterLeftRight2 {
@@ -489,8 +484,8 @@
 }
 [data-aos="grow-line-center-left-right-2"].aos-animate {
   opacity: 1;
-  animation: growLineCenterLeftRight2 0.7s linear forwards;
-  animation-delay: 10s; /* Adjust delay as needed */
+  animation: growLineCenterLeftRight2 0.5s linear forwards;
+  /* animation-delay: 3.1s; */
 }
 /* --- */
 body {
@@ -1756,7 +1751,20 @@ ul {
   margin: 0 auto;
   right: 85px;
 }
+.horz-ver-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 150px;
 
+  margin: 0 auto;
+  right: 75px;
+}
+.text-container {
+  font-family: "CustomFont";
+}
 .content-3 {
   font-family: "CustomFont";
   font-size: 15px;
@@ -1823,7 +1831,7 @@ ul {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 270px;
+  width: 180px;
   /* background-color: #2c3e50; */
   margin: 0px auto;
 }
@@ -1958,7 +1966,7 @@ ul {
 }
 .profile-line {
   border-left: 3px solid #343434;
-  height: 166px;
+  height: 228px;
   margin-left: 10%;
 }
 .profile-para {
@@ -2028,13 +2036,15 @@ ul {
 }
 
 .styled-button-1:hover {
-  color: white;
-  background-color: gray;
+  /* color: white; */
+  background-color: #f4cffe;
 }
 .styled-button-1 {
   /* padding-top: 10px; */
   margin-top: 10px;
-  border: 2px solid gray;
+  border: 2px solid#e0cffe;
+  background-color: #e0cffe;
+  color: #402e70;
   border-radius: 25px;
   padding: 10px 20px;
   font-size: 12px;
@@ -2042,26 +2052,27 @@ ul {
   font-family: "Poppins", sans-serif;
 }
 .styled-button a {
-  color: #000;
+  color: #402e70;
   /* text-decoration: none; */
 }
 .styled-button a:hover {
-  color: white;
+  color: #402e70;
 }
 
 .styled-button {
   color: black;
   margin-top: 5px;
-  border: 2px solid gray;
-  /* border-radius: 10px; */
-  padding: 2px 10px;
+  border: 2px solid #e0cffe;
+  border-radius: 17px;
+  padding: 5px 14px;
   font-size: 12px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  background-color: #e0cffe;
+  color: #402e70;
 }
 .styled-button:hover {
-  color: white;
-  background-color: gray;
+  background-color: #f4cffe;
 }
 .vertical-line-container-4 {
   display: flex;
@@ -2231,6 +2242,17 @@ ul {
 
 /* ---------------------------- */
 @media only screen and (max-width: 420px) {
+  /* --------- */
+
+  .zoom-out-right-mobile {
+    animation: zoomOutRightMobile 2s;
+  }
+
+  .zoom-out-left-mobile {
+    animation: zoomOutLeftMobile 2s;
+  }
+  /*  */
+
   .Top-Header {
     height: 80px;
     display: flex;
@@ -3191,13 +3213,13 @@ ul {
     margin-right: -27px;
   }
   .horzline-cen-6 {
-    width: 220px;
+    width: 176px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -20px;
     transform: translateY(0px);
   }
   .horzline-cen-7 {
-    width: 220px;
+    width: 160px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -20px;
     margin-top: -11px;
@@ -3353,7 +3375,7 @@ ul {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 270px;
+    width: 180px;
     /* background-color: #2c3e50; */
     margin: 0px auto;
   }
@@ -4314,13 +4336,13 @@ ul {
     margin-right: -27px;
   }
   .horzline-cen-6 {
-    width: 220px;
+    width: 176px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -20px;
     transform: translateY(0px);
   }
   .horzline-cen-7 {
-    width: 220px;
+    width: 160px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -20px;
     margin-top: -11px;
@@ -4476,7 +4498,7 @@ ul {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 270px;
+    width: 180px;
     /* background-color: #2c3e50; */
     margin: 0px auto;
   }
@@ -5014,13 +5036,13 @@ ul {
     margin-right: -27px;
   }
   .horzline-cen-6 {
-    width: 220px;
+    width: 176px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -20px;
     transform: translateY(0px);
   }
   .horzline-cen-7 {
-    width: 220px;
+    width: 160px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -20px;
     margin-top: -11px;
@@ -5176,7 +5198,7 @@ ul {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 270px;
+    width: 180px;
     /* background-color: #2c3e50; */
     margin: 0px auto;
   }

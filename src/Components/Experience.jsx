@@ -46,7 +46,7 @@ function Experience() {
             style={{ textAlign: "left", marginLeft: "15px" }}
             data-aos="custom-fade-right"
           >
-            My role is to develop a hardware-embedded<br></br> projectin the
+            My role is to develop a hardware-embedded<br></br> project in the
             electrical and electronics<br></br> domain based on the student and
             industry <br></br>requirements. I worked on most of the Digital/{" "}
             <br></br>Analog sensors and communications
@@ -61,10 +61,13 @@ function Experience() {
       <div className="timeline-1">
         <div className="first-p" data-aos="custom-fade-left">
           <p style={{ textAlign: "left", marginRight: "15px" }}>
-            My role is to design and develop the product,<br></br> covering
-            aspects from ideation, prototyping,<br></br> design, and
-            commercialization. Below are the<br></br> domains. I have worked on
-            during product<br></br> development.
+            My responsibility is to design and develop <br></br> the product,
+            covering aspects from ideation,<br></br> prototyping, design, and
+            commercialization.<br></br> I worked on Team Management, Technical
+            <br></br>
+            Expertise/Electronics Development,<br></br> Production Planning,
+            Innovation, Testing and<br></br> Training during product
+            development.
           </p>
         </div>
         <div className="vert-right" data-aos="grow-line-down-right"></div>
@@ -109,10 +112,12 @@ function Experience() {
       <div className="timeline-1">
         <div className="first-p" data-aos="custom-fade-left">
           <p style={{ textAlign: "left", marginRight: "15px" }}>
-            My role is to design and develop the product,<br></br> covering
-            aspects from ideation, prototyping,<br></br> design, and
-            commercialization. Below are the<br></br> domains. I have worked on
-            during product<br></br> development.
+            My responsibility is to design and develop<br></br> the product,
+            covering aspects from ideation,<br></br> prototyping, design, and
+            commercialization.<br></br> I worked on Project Management,
+            Technical<br></br> Expertise/Electronics Development,<br></br>{" "}
+            Production Planning, Market Analysis, <br></br> Training and
+            Quotation Preparation during<br></br> product development.
           </p>
         </div>
         <div className="vert-right-1" data-aos="grow-line-down-right-2"></div>
@@ -154,8 +159,18 @@ function Experience() {
           <div className="box-item">
             <img src={logo3} alt="Logo" className="logo3" data-aos="zoom-in" />
             <div className="logo-Name-2">
-              <img src={logoRight} alt="logoRight" className="logo-RightName" />
-              <img src={logoLeft} alt="logoleft" className="logo-LeftName" />
+              <img
+                src={logoRight}
+                alt="logoRight"
+                className="logo-RightName"
+                data-aos="zoom-in"
+              />
+              <img
+                src={logoLeft}
+                alt="logoleft"
+                className="logo-LeftName"
+                data-aos="zoom-in"
+              />
             </div>
             <div className="yeardiv">
               <div className="Year-5">

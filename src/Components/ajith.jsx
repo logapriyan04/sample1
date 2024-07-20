@@ -114,8 +114,7 @@ function Ajith() {
           <h1>Hi! Meet AJITH KUMAR V</h1>
           <h2>
             Founder-Shine Craft Technologies
-            <br /> Product Development Engineer,
-            <br /> Electronic Systems
+            <br /> IOT
           </h2>
         </div>
       </div>

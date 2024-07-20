@@ -15,10 +15,7 @@ function Experience() {
   useEffect(() => {
     Aos.init();
   });
-  // useEffect(() => {
-  //   Aos.init({ duration: 2000 });
 
-  // });
   return (
     <div className="Experience" style={{ paddingTop: "5%" }}>
       <div className="Head-1">
@@ -35,7 +32,7 @@ function Experience() {
         <div className="line-3" data-aos="grow-line"></div>
         <div className="horz-line-2" data-aos="grow-line-left"></div>
       </div>
-      {/* Timeline Section */}
+
       <div className="timeline">
         <div className="Year-1" data-aos="custom-fade-in">
           <h2>2017 - 2018</h2>
@@ -43,7 +40,11 @@ function Experience() {
         <div className="vert-left-1" data-aos="grow-line-down"></div>
         <div className="first-p">
           <p
-            style={{ textAlign: "left", marginLeft: "15px" }}
+            style={{
+              textAlign: "left",
+              marginLeft: "15px",
+              marginTop: "30px",
+            }}
             data-aos="custom-fade-right"
           >
             My role is to develop a hardware-embedded<br></br> project in the
@@ -98,7 +99,9 @@ function Experience() {
         </div>
         <div className="vertical-left-1" data-aos="grow-line-down-left-2"></div>
         <div className="first-p" data-aos="custom-fade-right">
-          <p style={{ textAlign: "left", marginLeft: "15px" }}>
+          <p
+            style={{ textAlign: "left", marginLeft: "15px", marginTop: "45px" }}
+          >
             My role is to manage the software <br></br>developer team, Project
             planning <br></br>and workschedule for the team.
           </p>

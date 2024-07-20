@@ -21,7 +21,7 @@ function App() {
             <Route path="/" Component={Firstpage}></Route>
 
             <Route path="/ajith" element={<Ajith />}></Route>
-            <Route path="/Secondprofile" Component={Secondprofile}></Route>
+            {/* <Route path="/Secondprofile" Component={Secondprofile}></Route> */}
           </Routes>
           {/* <Footer /> */}
         </div>

@@ -112,10 +112,7 @@ function Ajith() {
         </div>
         <div className="main-content-1">
           <h1>Hi! Meet AJITH KUMAR V</h1>
-          <h2>
-            Founder-Shine Craft Technologies
-            <br /> IOT
-          </h2>
+          <h2>Founder-Shine Craft Technologies</h2>
         </div>
       </div>
       <div className="profile-projects">

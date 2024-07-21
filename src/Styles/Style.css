@@ -269,7 +269,7 @@
 .vert-right-1 {
   border-left: 8px solid rgba(255, 255, 255, 0.819);
   height: 186px;
-  margin-right: 85px;
+  /* margin-right: 85px; */
   animation-delay: 4s;
   transform-origin: top;
   transform: scaleY(0); /* Initial scale */
@@ -1683,8 +1683,8 @@ ul {
 }
 .Year-4 {
   font-family: "CustomFont";
-
-  transform: translateX(-68px) translateY(110px);
+  margin-left: 20px;
+  margin-top: 100px;
 }
 .horz-line {
   display: flex;
@@ -3163,28 +3163,24 @@ ul {
   }
   .Year-2 {
     font-family: "CustomFont";
-    /* background-color: #21181b; */
-    width: 180px;
+
+    /* width: 180px; */
     margin-left: 10px;
-    margin-top: 61px;
-    /* transform: translateY(70px); */
+    margin-top: 60px;
+
     font-size: 12px;
   }
   .Year-3 {
     font-family: "CustomFont";
-    margin-top: 0px;
+    margin-top: 60px;
     font-size: 12px;
     margin-right: 10px;
-    margin-top: 61px;
-    /* transform: translateY(70px); */
   }
   .Year-4 {
     font-family: "CustomFont";
-
-    width: 200%;
-    margin-top: -45px;
     font-size: 12px;
-    margin-left: 0px;
+    margin-left: 10px;
+    margin-top: 62px;
   }
   .horz-line {
     display: flex;
@@ -3254,7 +3250,7 @@ ul {
   }
   .content-1 {
     /* background-color: #2c3e50; */
-    width: 200px;
+    width: 100px;
     margin-left: 10px;
     margin-top: 0px;
     font-family: "CustomFont";

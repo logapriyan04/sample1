@@ -127,23 +127,19 @@ function Experience() {
         <div className="Year-4" data-aos="custom-fade-in">
           <h2>2022 - 2023</h2>
         </div>
-        <div
-          className="content-1"
-          style={{ transform: "translateX(-40px)" }}
-          data-aos="custom-fade-up"
-        >
+        <div className="content-1" data-aos="custom-fade-up">
           <h6>
             PROJECT MANAGER <br />
             <span style={{ fontSize: "9px" }}>APPIKORN</span>
           </h6>
         </div>
       </div>
-      {/* Horizontal Line */}
+
       <div className="horz-line">
         <div className="horz-line-3" data-aos="grow-line-left-3"></div>
       </div>
       <div className="horz-ver">
-        <div className="content-3">
+        <div className="content-3" data-aos="custom-fade-up">
           <h6>
             PRODUCT DEVELOPMENT ENGINEER <br />
             <span style={{ fontSize: "9px" }}>CHEMIN C&I Pvt Ltd</span>
@@ -175,7 +171,7 @@ function Experience() {
                 data-aos="zoom-in"
               />
             </div>
-            <div className="yeardiv">
+            <div className="yeardiv" data-aos="custom-fade-up">
               <div className="Year-5">
                 <h2>2024</h2>
               </div>
@@ -207,16 +203,20 @@ function Experience() {
       </div>
       {/* Box Section */}
       <div className="box-2">
-        <div className="vert-left-3" data-aos="grow-line-down-5"></div>
-        <div className="text-container">
-          <div className="second-head">
-            <h3>WHAT A</h3>
+        <div className="box-con">
+          <div className="vert-left-3" data-aos="grow-line-down-5"></div>
+          <div className="text-container">
+            <div className="second-head">
+              <h4>CRAFTING BRILLIANCE</h4>
+            </div>
+            <div className="second-H">
+              <h4>
+                 TOMORROW <br></br>FUTURE
+              </h4>
+            </div>
           </div>
-          <div className="second-H">
-            <h1>YEAR</h1>
-          </div>
+          <div className="vert-right-3" data-aos="grow-line-down-6"></div>
         </div>
-        <div className="vert-right-3" data-aos="grow-line-down-6"></div>
       </div>
       {/* Horizontal Line */}
       <div className="horz-line">

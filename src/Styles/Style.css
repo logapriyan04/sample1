@@ -3104,7 +3104,7 @@ ul {
     width: 279px;
     border-top: 8px solid rgba(255, 255, 255, 0.819);
     margin-right: -19px;
-    margin-top: -1px;
+    margin-top: 0px;
   }
   .timeline {
     display: flex;
@@ -3152,12 +3152,12 @@ ul {
 
   .vert-right-2 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 280px;
+    height: 282px;
     /* margin-right: 10px; */
     /* margin-top: -8px; */
   }
   .vert-left-2 {
-    height: 280px;
+    height: 282px;
     /* margin-top: -8px; */
     /* margin-right: 25px; */
   }

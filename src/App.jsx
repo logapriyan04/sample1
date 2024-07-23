@@ -17,7 +17,7 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route path="/" Component={Firstpage}></Route>
+            <Route path="/sample1" Component={Firstpage}></Route>
 
             <Route path="/ajith" element={<Ajith />}></Route>
             <Route path="/Secondprofile" Component={Secondprofile}></Route>

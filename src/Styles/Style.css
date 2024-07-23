@@ -3310,13 +3310,10 @@ ul {
 
   .line-4 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
-    height: 82px;
-    /* margin-top: 0px; */
+    height: 100px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 130px;
-    position: relative;
-    /* margin-left: 0px; */
-    /* margin-right: 152px; */
   }
   .line-5 {
     border-left: 8px solid rgba(255, 255, 255, 0.819);
@@ -3330,14 +3327,12 @@ ul {
     margin-right: 108px;
   }
   .content-3 {
-    /* background-color: #402e70; */
-    /* width: 100px; */
-    /* margin-right: 0px; */
-    /* margin-left: 0px; */
     text-align: left;
     font-family: "CustomFont";
     font-size: 12px;
     position: relative;
+    margin-top: 0px;
+    /* background-color: #21181b; */
   }
   .box-1 {
     display: flex;
